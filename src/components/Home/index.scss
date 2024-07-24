@@ -1,3 +1,24 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes rotateIn {
+    0% {
+        transform: rotate(-360deg);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+
+
 .home-page {
 
     .text-zone {
@@ -38,9 +59,11 @@
             animation: fadeIn 1s 1.7s backwards;
             opacity: 0.6;
         }
+
         img {
-            width: 32px;
+            width: 42px;
             margin-left: 20px;
+            padding-right: 4px;
             opacity: 0;
             height: auto;
             animation: rotateIn 1s linear both;
@@ -72,10 +95,12 @@
         float: left;
         animation: fadeIn 1s 1.8s backwards;
         white-space: nowrap;
+
+        &:hover {
+            background: #ffd700;
+            color: #333;
+        }
     }
 
-    &:hover {
-        background: #ffd700;
-        color: #333;
-    }
+    
 }
