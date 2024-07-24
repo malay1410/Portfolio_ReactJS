@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import './index.scss';
 import AnimatedLetters from "../AnimatedLetters";
-import LogoTitle from "../../assets/images/M.png"; 
+import LogoTitle from "../../assets/images/M1.png"; 
 import Logo from './Logo'
 
 const Home = () => {

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import './index.scss';
-import LogoS from '../../../assets/images/logo-s.png' //Solid Logo
+import LogoS from '../../../assets/images/M1.png' //Solid Logo
 // import { gsap } from "gsap";
 // import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 
