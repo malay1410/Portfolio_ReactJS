@@ -61,11 +61,13 @@
         }
 
         img {
-            width: 55px;
-            margin-left: 20px;
+            width: 105px; /* Set the width as per the font size */
+            height: auto; /* Maintain aspect ratio */
+            vertical-align: middle; /* Align image with the text */
+            margin-left: 10px; /* Adjust the spacing between the text and the image */
+            margin-right: 0px;
             padding-right: 4px;
             opacity: 0;
-            height: auto;
             animation: rotateIn 1s linear both;
             animation-delay: 1.4s;
 
