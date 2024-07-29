@@ -48,6 +48,8 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-optional-chaining": "^7.20.2"
+    "@babel/plugin-proposal-optional-chaining": "^7.21.0",
+    "@babel/preset-env": "^7.25.0",
+    "presets": "@babel/preset-env"
   }
 }

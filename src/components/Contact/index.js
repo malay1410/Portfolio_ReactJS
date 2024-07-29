@@ -3,6 +3,7 @@ import './index.scss';
 import React, { useEffect, useState, useRef } from "react";
 import AnimatedLetters from '../AnimatedLetters';
 import emailjs from '@emailjs/browser';
+// import { validateBlockListParams } from '../validateBlockListParams/validateBlockListParams';
 
 
 const Contact = () => {
