@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import AnimatedLetter from "../AnimatedLetters";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngular, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons';
-import { faSquare } from '@fortawesome/free-solid-svg-icons';
 import Loader from 'react-loaders';
 
 const About = () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom'
 import './index.scss'
-import Logo from '/Users/malaybhatt/react-portfolio/src/assets/images/M1.png' 
+import Logo from '../../assets/images/M1.png' 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -34,7 +34,7 @@ const Sidebar = () => {
                 <li>
                     <a
                         target='_blank'
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                         href='https://www.linkedin.com/in/malaybhatt1410/'
                     >
                         <FontAwesomeIcon icon={faLinkedin} color='#4d4d4e' />
@@ -45,7 +45,7 @@ const Sidebar = () => {
                 <li>
                     <a
                         target='_blank'
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                         href='https://github.com/malay1410'
                     >
                         <FontAwesomeIcon icon={faGithub} color='#4d4d4e' />
