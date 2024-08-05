@@ -12,6 +12,12 @@ import './App.scss';
 function App() {
   return (
     <>
+    <div class="live-background-animation">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+      <div id="stars4"></div>
+    </div>
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
