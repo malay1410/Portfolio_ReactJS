@@ -2,6 +2,7 @@ import Loader from 'react-loaders';
 import './index.scss';
 import React, { useEffect, useState } from "react";
 import AnimatedLetters from '../AnimatedLetters';
+import TextShpere from '../TextSphere';
 
 const Projects = () => {
 
@@ -27,6 +28,7 @@ const Projects = () => {
                         />
                     </h1>
                 </div>
+                <TextShpere />
             </div>
             <Loader type="pacman" />
         </>
