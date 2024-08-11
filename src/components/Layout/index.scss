@@ -58,7 +58,8 @@
 }
 
 .about-page, 
-.contact-page {
+.contact-page,
+.projects-page {
     .text-zone {
         position: absolute;
         left: 10%;
@@ -124,13 +125,14 @@
             animation-delay: 1.5s;
         }
     }
+
+    .text-animate-hover {
+        &:hover {
+            color: #fff;
+        
+        }
+    }
 }
 
 
 
-.text-animate-hover {
-&:hover {
-    color: #fff;
-
-}
-}
