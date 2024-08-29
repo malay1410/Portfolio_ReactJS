@@ -1,8 +1,11 @@
 import './index.scss';
+// import Education from "../../assets/images/education.png"; 
 import React, { useEffect, useState } from "react";
 import AnimatedLetter from "../AnimatedLetters";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngular, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons';
+import Card from './Cards';
+import UF from "../../assets/images/UF.png"; 
 import Loader from 'react-loaders';
 
 const About = () => {
@@ -11,7 +14,7 @@ const About = () => {
     useEffect(() => {
         const timer = setTimeout(() => { 
             setLetterClass('text-animate-hover')
-        }, 3000);
+        },3000);
     
         // Cleanup the timer if the component unmounts
         return () => clearTimeout(timer);
@@ -24,7 +27,7 @@ const About = () => {
                 <h1>
                     <AnimatedLetter
                         letterClass={letterClass}
-                        strArray={['A', 'b', 'o', 'u', 't', ' ', 'M', 'e']}
+                        strArray={['A', 'b', 'o', 'u', 't', ' ', 'M', 'e']} //ABOUT ME
                         idx={15}
                     />
                 </h1>
@@ -46,6 +49,54 @@ const About = () => {
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
+
+                <br/>
+                <br/>
+                <br/>
+                <h1>
+                    <AnimatedLetter
+                        letterClass={letterClass}
+                        strArray={['E', 'd', 'u', 'c', 'a', 't', 'i', 'o', 'n']} //EDUCATION
+                        idx={15}
+                    />
+                    {/* <img src={Education} alt="education" /> */} 
+                </h1>
+                <div className='card-deck'> 
+                    <Card 
+                        frontImage={UF} 
+                        frontContent="University of Florida"
+                        backContent="Masters in Computer Science"
+                    />
+                    
+                    <Card 
+                        frontImage={UF} 
+                        frontContent="KJ Somaiya College of Engineering"
+                        backContent="Bachelors in Technology, Information Technolgy"
+                    />
+                </div>
+                <br/>
+                <br/>
+                <br/>
+                <h1>
+                    <AnimatedLetter
+                        letterClass={letterClass}
+                        strArray={['E', 'x', 'p', 'e', 'r', 'i', 'e', 'n', 'c', 'e']} //EXPERIENCE
+                        idx={15}
+                    />
+                </h1>
+                <div className='card-deck'> 
+                    <Card 
+                        frontImage={UF} 
+                        frontContent="University of Florida"
+                        backContent="Masters in Computer Science"
+                    />
+                    
+                    <Card 
+                        frontImage={UF} 
+                        frontContent="KJ Somaiya College of Engineering"
+                        backContent="Bachelors in Technology, Information Technolgy"
+                    />
+                </div>
             </div>
 
             <div className='stage-cube-cont'>
