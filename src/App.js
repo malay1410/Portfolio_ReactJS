@@ -5,6 +5,7 @@ import Home from './components/Home'
 import About from './components/About';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
+import Eduation from './components/Education';
 import './App.scss';
 
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="projects" element={<Projects />} />
+          <Route path="education" element={<Eduation />} />
         </Route>
       </Routes>
     </>

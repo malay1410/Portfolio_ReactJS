@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 import './index.scss'
 import Logo from '../../assets/images/M1.png' 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faEye, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faEye, faGraduationCap, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Sidebar = () => {
@@ -16,19 +16,23 @@ const Sidebar = () => {
             <nav>
 
                 <NavLink exact="true" activeclassname="active" to="/" >
-                    <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+                    <FontAwesomeIcon icon={faHome} color="#4d4d4e" size='2x'/>
                 </NavLink>
 
                 <NavLink exact="true" activeclassname="active" className="about-link" to="/about" >
-                    <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+                    <FontAwesomeIcon icon={faUser} color="#4d4d4e" size='2x'/>
                 </NavLink>
 
                 <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact" >
-                    <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+                    <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" size='2x'/>
                 </NavLink>
 
                 <NavLink exact="true" activeclassname="active" className="projects-link" to="/projects" >
-                    <FontAwesomeIcon icon={faEye} color="#4d4d4e" />
+                    <FontAwesomeIcon icon={faEye} color="#4d4d4e" size='2x'/>
+                </NavLink>
+
+                <NavLink exact="true" activeclassname="active" className="eduation-link" to="/education" >
+                    <FontAwesomeIcon icon={faGraduationCap} color="#4d4d4e" size='2x'/>
                 </NavLink>
 
             </nav>
@@ -41,7 +45,7 @@ const Sidebar = () => {
                         rel="noopener noreferrer"
                         href='https://www.linkedin.com/in/malaybhatt1410/'
                     >
-                        <FontAwesomeIcon icon={faLinkedin} color='#4d4d4e' />
+                        <FontAwesomeIcon icon={faLinkedin} color='#4d4d4e' size='2x'/>
 
                     </a>
                 </li>
@@ -52,7 +56,7 @@ const Sidebar = () => {
                         rel="noopener noreferrer"
                         href='https://github.com/malay1410'
                     >
-                        <FontAwesomeIcon icon={faGithub} color='#4d4d4e' />
+                        <FontAwesomeIcon icon={faGithub} color='#4d4d4e' size='2x'/>
 
                     </a>
                 </li>

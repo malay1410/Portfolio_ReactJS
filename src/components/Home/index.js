@@ -10,7 +10,7 @@ const Home = () => {
 
     const [letterClass, setLetterClass] = useState('text-animate')
     const nameArray = ['a', 'l', 'a', 'y', ' ', 'B', 'h', 'a', 't', 't']
-    const jobArray = ['W', 'e', 'b', ' ', 'D', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r']
+    const jobArray = ['S', 'o', 'f', 't', 'w', 'a', 'r', 'e', ' ', 'E', 'n', 'g', 'i', 'n', 'e', 'e', 'r']
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -36,7 +36,7 @@ const Home = () => {
                 <br />
                 <AnimatedLetters letterClass={letterClass}
                 strArray={jobArray}
-                idx={22}/>
+                idx={18}/>
                 </h1>
                 <h2>Fullstack Developer / FrontEnd Developer / Backend Developer</h2>
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>
