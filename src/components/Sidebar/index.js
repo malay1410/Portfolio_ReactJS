@@ -31,7 +31,7 @@ const Sidebar = () => {
                     <FontAwesomeIcon icon={faEye} color="#4d4d4e" size='2x'/>
                 </NavLink>
 
-                <NavLink exact="true" activeclassname="active" className="eduation-link" to="/education" >
+                <NavLink exact="true" activeclassname="active" className="education-link" to="/education" >
                     <FontAwesomeIcon icon={faGraduationCap} color="#4d4d4e" size='2x'/>
                 </NavLink>
 
