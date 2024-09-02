@@ -4,8 +4,8 @@ import React, { useEffect, useState } from "react";
 import AnimatedLetter from "../AnimatedLetters";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngular, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons';
-import Card from './Cards';
-import UF from "../../assets/images/UF.png"; 
+// import Card from './Cards';
+// import UF from "../../assets/images/UF.png"; 
 import Loader from 'react-loaders';
 
 const About = () => {
@@ -31,72 +31,23 @@ const About = () => {
                         idx={15}
                     />
                 </h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-
-                <br/>
-                <br/>
-                <br/>
-                <h1>
-                    <AnimatedLetter
-                        letterClass={letterClass}
-                        strArray={['E', 'd', 'u', 'c', 'a', 't', 'i', 'o', 'n']} //EDUCATION
-                        idx={15}
-                    />
-                    {/* <img src={Education} alt="education" /> */} 
-                </h1>
-                <div className='card-deck'> 
-                    <Card 
-                        frontImage={UF} 
-                        frontContent="University of Florida"
-                        backContent="Masters in Computer Science"
-                    />
-                    
-                    <Card 
-                        frontImage={UF} 
-                        frontContent="KJ Somaiya College of Engineering"
-                        backContent="Bachelors in Technology, Information Technolgy"
-                    />
-                </div>
-                <br/>
-                <br/>
-                <br/>
-                <h1>
-                    <AnimatedLetter
-                        letterClass={letterClass}
-                        strArray={['E', 'x', 'p', 'e', 'r', 'i', 'e', 'n', 'c', 'e']} //EXPERIENCE
-                        idx={15}
-                    />
-                </h1>
-                <div className='card-deck'> 
-                    <Card 
-                        frontImage={UF} 
-                        frontContent="University of Florida"
-                        backContent="Masters in Computer Science"
-                    />
-                    
-                    <Card 
-                        frontImage={UF} 
-                        frontContent="KJ Somaiya College of Engineering"
-                        backContent="Bachelors in Technology, Information Technolgy"
-                    />
-                </div>
+                <h2 class="first-word-uppercase-h2">
+                    As a recent graduate in Information Technology Engineering, I am driven by a deep passion for the field, 
+                    which has led me to further my education. I am currently pursuing my Master’s in Computer and Information 
+                    Sciences and Engineering at the University of Florida in the USA. My academic journey has provided me with 
+                    a solid foundation in computer science, programming, data analytics, and project management.
+                </h2>
+                <h2 class="first-word-uppercase-h2">
+                    Through various internships and academic projects, I’ve gained hands-on experience in software development, 
+                    database design, and data analysis. Working collaboratively with teams has not only allowed me to deliver 
+                    projects successfully but has also sharpened my communication and leadership abilities.
+                </h2>
+                <h2 class="first-word-uppercase-h2">
+                    This advanced degree is deepening my expertise and preparing me for a thriving career in the tech industry. 
+                    I am always open to exploring opportunities that align with my skills and interests and welcome any connections 
+                    or conversations in this space. Thank you for visiting my profile!
+                </h2>
+                
             </div>
 
             <div className='stage-cube-cont'>

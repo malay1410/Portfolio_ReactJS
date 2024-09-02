@@ -88,3 +88,15 @@
   align-items: center; /* Center the cards vertically */
   padding: 20px;
 }
+
+//First Letter
+.first-word-uppercase-h2::first-letter {
+  font-size: 40px;
+  color: #ffd700;
+  font-weight: bold;
+}
+
+// .first-word-uppercase-h2:hover {
+//   font-size: 45px;
+//   color: #fff;
+// }
