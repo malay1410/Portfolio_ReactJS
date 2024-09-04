@@ -61,10 +61,11 @@
 .contact-page,
 .projects-page,
 .eduaction-page {
+
     .text-zone {
         position: absolute;
         left: 10%;
-        top: 50%;
+        top: 40%;
         transform: translateY(-50%);
         width: 60%;
         vertical-align: middle;
@@ -89,7 +90,7 @@
             font-family: 'La Belle Aurore';
             font-size: 18px;
             position: absolute;
-            margin-top: -10px;
+            margin-top: -1px;
             left: -10px;
             opacity: 0.6;
             line-height: 18px;

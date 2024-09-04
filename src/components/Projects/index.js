@@ -1,8 +1,10 @@
 import Loader from 'react-loaders';
 import './index.scss';
 import React, { useEffect, useState } from "react";
+import Card from './Cards'
 import AnimatedLetters from '../AnimatedLetters';
 import TextShpere from '../TextSphere';
+import UF from "../../assets/images/UF.png"
 
 const Projects = () => {
 
@@ -29,6 +31,20 @@ const Projects = () => {
                     </h1>
                 </div>
                 <TextShpere />
+
+                <div className='container-card'>
+                    <Card>
+                    projectTitle="My Project"
+                    frontImage={UF}
+                    projectLink="https://github.com/myproject"
+                    projectCreatedOn="September 2024"
+                    projectDescription="This is a description of the project."
+                    techStackIcons={[
+                        { src: {UF}, alt: 'React' },
+                        { src: {UF}, alt: 'Node.js' }
+                    ]}
+                    </Card>
+                </div>
             </div>
             <Loader type="pacman" />
         </>

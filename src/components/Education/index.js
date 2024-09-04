@@ -26,7 +26,15 @@ const Projects = () => {
                             idx={15}
                         />
                     </h1>
+
+                    <div className='education-description'>
+                        <div className='masters'>
+                            <h1>University of Florida</h1>
+                        </div>
+                    </div>
                 </div>
+
+                
             </div>
             <Loader type="pacman" />
         </>
