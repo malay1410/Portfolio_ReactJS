@@ -27,9 +27,16 @@ const Projects = () => {
                         />
                     </h1>
 
-                    <div className='education-description'>
-                        <div className='masters'>
-                            <h1>University of Florida</h1>
+                    <div className='education-list'>
+                        <div className='education-entry'>
+                            <h2>Master's in Computer and Information Sciences and Engineering</h2>
+                            <p>University of Florida</p>
+                            <span>2023-25</span>
+                        </div>
+                        <div className='education-entry'>
+                            <h3>Bachelor's in Information Technology</h3>
+                            <p>Mumbai University</p>
+                            <span>2019-23</span>
                         </div>
                     </div>
                 </div>

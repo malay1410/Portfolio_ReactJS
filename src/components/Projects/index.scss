@@ -1,5 +1,19 @@
-.card-container {
+.project-title-sphere-container {
+    display: flex;
+    align-items: center;
+
+}
+
+.overflow-y-auto {
+    overflow-y: auto !important;
+}
+
+.projects-cards-container {
+    margin-left: -40px;
+    display: flex;
+    max-width: 80%;
     position: absolute;
-    top: 90%;
-    left: 15%;
+    top: 75%;
+    left: 10%;
+    flex-wrap: wrap;
 }

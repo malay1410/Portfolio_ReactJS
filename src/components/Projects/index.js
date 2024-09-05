@@ -20,19 +20,67 @@ const Projects = () => {
 
     return (
         <>
-            <div className='container projects-page'>
-                <div className='text-zone'>
-                    <h1>
-                        <AnimatedLetters
-                            letterClass={letterClass}
-                            strArray={['M', 'y', ' ', 'P', 'r', 'o', 'j', 'e', 'c', 't', 's']}
-                            idx={15}
-                        />
-                    </h1>
+            <div className='container projects-page overflow-y-auto'>
+                <div className='project-title-sphere-container'>
+                    <div className='text-zone'>
+                        <h1>
+                            <AnimatedLetters
+                                letterClass={letterClass}
+                                strArray={['M', 'y', ' ', 'P', 'r', 'o', 'j', 'e', 'c', 't', 's']}
+                                idx={15}
+                            />
+                        </h1>
+                    </div>
+                    <TextShpere />
                 </div>
-                <TextShpere />
 
-                <div className='container-card'>
+
+                <div className='projects-cards-container'>
+                    <Card>
+                    projectTitle="My Project"
+                    frontImage={UF}
+                    projectLink="https://github.com/myproject"
+                    projectCreatedOn="September 2024"
+                    projectDescription="This is a description of the project."
+                    techStackIcons={[
+                        { src: {UF}, alt: 'React' },
+                        { src: {UF}, alt: 'Node.js' }
+                    ]}
+                    </Card>
+
+                    <Card>
+                    projectTitle="My Project"
+                    frontImage={UF}
+                    projectLink="https://github.com/myproject"
+                    projectCreatedOn="September 2024"
+                    projectDescription="This is a description of the project."
+                    techStackIcons={[
+                        { src: {UF}, alt: 'React' },
+                        { src: {UF}, alt: 'Node.js' }
+                    ]}
+                    </Card>
+                    <Card>
+                    projectTitle="My Project"
+                    frontImage={UF}
+                    projectLink="https://github.com/myproject"
+                    projectCreatedOn="September 2024"
+                    projectDescription="This is a description of the project."
+                    techStackIcons={[
+                        { src: {UF}, alt: 'React' },
+                        { src: {UF}, alt: 'Node.js' }
+                    ]}
+                    </Card>
+                    <Card>
+                    projectTitle="My Project"
+                    frontImage={UF}
+                    projectLink="https://github.com/myproject"
+                    projectCreatedOn="September 2024"
+                    projectDescription="This is a description of the project."
+                    techStackIcons={[
+                        { src: {UF}, alt: 'React' },
+                        { src: {UF}, alt: 'Node.js' }
+                    ]}
+                    </Card>
                     <Card>
                     projectTitle="My Project"
                     frontImage={UF}

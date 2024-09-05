@@ -1,9 +1,10 @@
 /* Container for the card */
 .card-container {
-    perspective: 1000px;
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    height: 200px;
     cursor: pointer;
+    padding: 40px 40px;
+    
 }
 
 .card {
