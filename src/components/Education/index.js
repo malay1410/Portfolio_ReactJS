@@ -26,23 +26,29 @@ const Projects = () => {
                             idx={15}
                         />
                     </h1>
-
-                    <div className='education-list'>
-                        <div className='education-entry'>
-                            <h2>Master's in Computer and Information Sciences and Engineering</h2>
-                            <p>University of Florida</p>
-                            <span>2023-25</span>
-                        </div>
-                        <div className='education-entry'>
-                            <h3>Bachelor's in Information Technology</h3>
-                            <p>Mumbai University</p>
-                            <span>2019-23</span>
-                        </div>
-                    </div>
                 </div>
+            </div>
+
+            <div>
+                <div className='container education-list'>
+                    <article className='education-entry'>
+                        <h2>Master's in Computer and Information Sciences and Engineering</h2>
+                        <p>University of Florida</p>
+                        <span>2023 - 2025</span>
+                    </article>
+
+                    <article className='education-entry'>
+                        <h2>Bachelor's in Information Technology</h2>
+                        <p>Mumbai University</p>
+                        <span>2019 - 2023</span>
+                    </article>
+                </div>
+            </div>
+                    
+                
 
                 
-            </div>
+            
             <Loader type="pacman" />
         </>
     )
