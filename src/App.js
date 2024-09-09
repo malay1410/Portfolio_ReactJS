@@ -13,7 +13,7 @@ function App() {
    
   return (
     <>
-      <div class="live-background-animation">
+      <div className="live-background-animation">
         <div id="stars"></div>
         <div id="stars2"></div>
         <div id="stars3"></div>

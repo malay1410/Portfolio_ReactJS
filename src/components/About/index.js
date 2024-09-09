@@ -31,18 +31,18 @@ const About = () => {
                         idx={15}
                     />
                 </h1>
-                <h2 class="first-word-uppercase-h2">
+                <h2 className="first-word-uppercase-h2">
                     As a recent graduate in Information Technology Engineering, I am driven by a deep passion for the field, 
                     which has led me to further my education. I am currently pursuing my Master’s in Computer and Information 
                     Sciences and Engineering at the University of Florida in the USA. My academic journey has provided me with 
                     a solid foundation in computer science, programming, data analytics, and project management.
                 </h2>
-                <h2 class="first-word-uppercase-h2">
+                <h2 className="first-word-uppercase-h2">
                     Through various internships and academic projects, I’ve gained hands-on experience in software development, 
                     database design, and data analysis. Working collaboratively with teams has not only allowed me to deliver 
                     projects successfully but has also sharpened my communication and leadership abilities.
                 </h2>
-                <h2 class="first-word-uppercase-h2">
+                <h2 className="first-word-uppercase-h2">
                     This advanced degree is deepening my expertise and preparing me for a thriving career in the tech industry. 
                     I am always open to exploring opportunities that align with my skills and interests and welcome any connections 
                     or conversations in this space. Thank you for visiting my profile!
