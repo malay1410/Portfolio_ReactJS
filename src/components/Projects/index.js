@@ -35,6 +35,16 @@ const Projects = () => {
 
 
                 <div className='projects-cards-container'>
+
+                <Card
+                    projectTitle="QuickQuiz App"
+                    projectLink="https://github.com/ayush0210/Shellhacks_24"
+                    projectCreatedOn="Sep 2024"
+                    projectDescription="QuickQuiz is an AI-powered learning platform built with React and OpenAI API, 
+                                        featuring intelligent document summarization, doubt resolution, and dynamic quiz generation. 
+                                        Enhanced with Flask backend and voice assistance, the platform has empowered 25,000+ students, 
+                                        boosting comprehension speed by 40% while increasing accessibility by 65%."
+                />       
                     
                 <Card
                     projectTitle="Decentralized Car Rental App"
@@ -89,7 +99,7 @@ const Projects = () => {
                                         featuring interactive seat selection, real-time availability updates, 
                                         secure payment integration, and user-friendly booking management for an 
                                         enhanced ticketing experience."
-                />       
+                />     
 
                 </div>
             </div>

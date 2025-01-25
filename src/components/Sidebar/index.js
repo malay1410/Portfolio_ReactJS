@@ -4,7 +4,7 @@ import './index.scss'
 import Logo from '../../assets/images/M1.png' 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faEye, faGraduationCap, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub, faBlackTie } from '@fortawesome/free-brands-svg-icons';
 
 const Sidebar = () => {
     return (
@@ -33,6 +33,10 @@ const Sidebar = () => {
 
                 <NavLink exact="true" activeclassname="active" className="education-link" to="/education" >
                     <FontAwesomeIcon icon={faGraduationCap} color="#4d4d4e"/>
+                </NavLink>
+
+                <NavLink exact="true" activeclassname="active" className="experience-link" to="/experience" >
+                    <FontAwesomeIcon icon={faBlackTie} color="#4d4d4e"/>
                 </NavLink>
 
             </nav>
