@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import LogoTitle from '../../assets/images/M1.png'
-import Logo from './Logo'
+// import Logo from './Logo'
 import Loader from 'react-loaders'
 
 const Home = () => {
@@ -74,7 +74,7 @@ const Home = () => {
     <>
       <div className="container home-page">
         <div className="text-zone flex-container">
-          <Logo className="logo-component" />
+          {/* <Logo className="logo-component" /> */}
           <h1>
             <span className={letterClass}>H</span>
             <span className={`${letterClass} _12`}>i,</span>
