@@ -1,35 +1,294 @@
-@keyframes spincube {
-  from,
-  to {
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+// @keyframes spincube {
+//   from,
+//   to {
+//     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+//   }
+//   16% {
+//     transform: rotateY(-90deg) rotateZ(90deg);
+//   }
+//   33% {
+//     transform: rotateY(-90deg) rotateX(90deg);
+//   }
+//   50% {
+//     transform: rotateY(-180deg) rotateZ(90deg);
+//   }
+//   66% {
+//     transform: rotateY(-270deg) rotateX(90deg);
+//   }
+//   83% {
+//     transform: rotateX(90deg);
+//   }
+// }
+
+// .stage-cube-cont {
+//   width: 25%;
+//   height: 100%;
+//   top: 0;
+//   padding-top: 18%;
+//   margin-left: 0;
+//   position: absolute;
+//   right: 0;
+// }
+
+// .cubespinner {
+//   animation-name: spincube;
+//   animation-timing-function: ease-in-out;
+//   animation-iteration-count: infinite;
+//   animation-duration: 12s;
+//   transform-style: preserve-3d;
+//   transform-origin: 100px 100px 0;
+//   margin-left: calc(50% - 100px);
+
+//   div {
+//     position: absolute;
+//     width: 200px;
+//     height: 200px;
+//     border: 1px solid #ccc;
+//     background: rgba(255, 255, 255, 0.4);
+//     text-align: center;
+//     font-size: 100px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     box-shadow: 0 0 20px 0px lightyellow;
+//   }
+
+//   .face1 {
+//     transform: translateZ(100px);
+//     color: #dd0031;
+//   }
+//   .face2 {
+//     transform: rotateY(90deg) translateZ(100px);
+//     color: #f06529;
+//   }
+//   .face3 {
+//     transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+//     color: #28a4d9;
+//   }
+//   .face4 {
+//     transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+//     color: #5ed4f4;
+//   }
+//   .face5 {
+//     transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+//     color: #efd81d;
+//   }
+//   .face6 {
+//     transform: rotateX(-90deg) translateZ(100px);
+//     color: #ec4d28;
+//   }
+// }
+
+// //CardDeck.css
+// .card-deck {
+//   display: flex;
+//   gap: 50px; /* Space between the cards */
+//   justify-content: left; /* Center the cards horizontally */
+//   align-items: center; /* Center the cards vertically */
+//   padding: 20px;
+// }
+
+// //First Letter
+// .first-word-uppercase-h2::first-letter {
+//   font-size: 40px;
+//   color: #ffd700;
+//   font-weight: bold;
+// }
+
+// // Define breakpoints
+// $mobile: 480px;
+// $tablet: 768px;
+// $desktop: 1200px;
+
+// @keyframes spincube {
+//   from,
+//   to {
+//     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+//   }
+//   16% {
+//     transform: rotateY(-90deg) rotateZ(90deg);
+//   }
+//   33% {
+//     transform: rotateY(-90deg) rotateX(90deg);
+//   }
+//   50% {
+//     transform: rotateY(-180deg) rotateZ(90deg);
+//   }
+//   66% {
+//     transform: rotateY(-270deg) rotateX(90deg);
+//   }
+//   83% {
+//     transform: rotateX(90deg);
+//   }
+// }
+
+// .stage-cube-cont {
+//   width: 25%;
+//   height: 100%;
+//   top: 0;
+//   padding-top: 18%;
+//   margin-left: 0;
+//   position: absolute;
+//   right: 0;
+
+//   // Responsive width
+//   @media (max-width: $tablet) {
+//     width: 35%;
+//   }
+//   @media (max-width: $mobile) {
+//     width: 50%;
+//   }
+// }
+
+// .cubespinner {
+//   animation-name: spincube;
+//   animation-timing-function: ease-in-out;
+//   animation-iteration-count: infinite;
+//   animation-duration: 12s;
+//   transform-style: preserve-3d;
+//   transform-origin: 100px 100px 0;
+//   margin-left: calc(50% - 100px);
+
+//   // Responsive margin
+//   @media (max-width: $tablet) {
+//     margin-left: calc(50% - 80px);
+//   }
+//   @media (max-width: $mobile) {
+//     margin-left: calc(50% - 60px);
+//   }
+
+//   div {
+//     position: absolute;
+//     width: 200px;
+//     height: 200px;
+//     border: 1px solid #ccc;
+//     background: rgba(255, 255, 255, 0.4);
+//     text-align: center;
+//     font-size: 100px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     box-shadow: 0 0 20px 0px lightyellow;
+
+//     // Responsive size
+//     @media (max-width: $tablet) {
+//       width: 160px;
+//       height: 160px;
+//       font-size: 80px;
+//     }
+//     @media (max-width: $mobile) {
+//       width: 120px;
+//       height: 120px;
+//       font-size: 60px;
+//     }
+//   }
+
+//   .face1 {
+//     transform: translateZ(100px);
+//     color: #dd0031;
+//   }
+//   .face2 {
+//     transform: rotateY(90deg) translateZ(100px);
+//     color: #f06529;
+//   }
+//   .face3 {
+//     transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+//     color: #28a4d9;
+//   }
+//   .face4 {
+//     transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+//     color: #5ed4f4;
+//   }
+//   .face5 {
+//     transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+//     color: #efd81d;
+//   }
+//   .face6 {
+//     transform: rotateX(-90deg) translateZ(100px);
+//     color: #ec4d28;
+//   }
+
+//   // Adjust translateZ for smaller screens
+//   @media (max-width: $tablet) {
+//     .face1,
+//     .face2,
+//     .face3,
+//     .face4,
+//     .face5,
+//     .face6 {
+//       transform: translateZ(80px);
+//     }
+//   }
+//   @media (max-width: $mobile) {
+//     .face1,
+//     .face2,
+//     .face3,
+//     .face4,
+//     .face5,
+//     .face6 {
+//       transform: translateZ(60px);
+//     }
+//   }
+// }
+
+// .card-deck {
+//   display: flex;
+//   gap: 50px;
+//   justify-content: left;
+//   align-items: center;
+//   padding: 20px;
+
+//   // Responsive gap
+//   @media (max-width: $tablet) {
+//     gap: 30px;
+//   }
+//   @media (max-width: $mobile) {
+//     gap: 20px;
+//     flex-direction: column;
+//   }
+// }
+
+// .first-word-uppercase-h2::first-letter {
+//   font-size: 40px;
+//   color: #ffd700;
+//   font-weight: bold;
+
+//   // Responsive font size
+//   @media (max-width: $tablet) {
+//     font-size: 30px;
+//   }
+//   @media (max-width: $mobile) {
+//     font-size: 25px;
+//   }
+// }
+
+// Define breakpoints
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
+
+.stage-cube-cont {
+  width: 25%;
+  height: 100%;
+  top: 0;
+  padding-top: 18%;
+  margin-left: 0;
+  position: absolute;
+  right: 0;
+
+  // Responsive width and positioning
+  @media (max-width: $tablet) {
+    width: 35%;
   }
-  16% {
-    transform: rotateY(-90deg) rotateZ(90deg);
-  }
-  33% {
-    transform: rotateY(-90deg) rotateX(90deg);
-  }
-  50% {
-    transform: rotateY(-180deg) rotateZ(90deg);
-  }
-  66% {
-    transform: rotateY(-270deg) rotateX(90deg);
-  }
-  83% {
-    transform: rotateX(90deg);
+  @media (max-width: $mobile) {
+    width: 50%;
+    position: relative; // Change to relative for mobile
+    top: auto; // Reset top
+    right: auto; // Reset right
+    margin: 20px auto; // Center horizontally
   }
 }
 
-.stage-cube-cont {
-    width: 25%;
-    height: 100%;
-    top: 0;
-    padding-top: 18%;
-    margin-left: 0;
-    position: absolute;
-    right: 0;
-}
-  
 .cubespinner {
   animation-name: spincube;
   animation-timing-function: ease-in-out;
@@ -38,6 +297,15 @@
   transform-style: preserve-3d;
   transform-origin: 100px 100px 0;
   margin-left: calc(50% - 100px);
+
+  // Responsive margin
+  @media (max-width: $tablet) {
+    margin-left: calc(50% - 80px);
+  }
+  @media (max-width: $mobile) {
+    margin-left: auto; // Reset margin-left for mobile
+    margin-right: auto; // Center horizontally
+  }
 
   div {
     position: absolute;
@@ -51,6 +319,18 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 20px 0px lightyellow;
+
+    // Responsive size
+    @media (max-width: $tablet) {
+      width: 160px;
+      height: 160px;
+      font-size: 80px;
+    }
+    @media (max-width: $mobile) {
+      width: 120px;
+      height: 120px;
+      font-size: 60px;
+    }
   }
 
   .face1 {
@@ -77,25 +357,63 @@
     transform: rotateX(-90deg) translateZ(100px);
     color: #ec4d28;
   }
+
+  // Adjust translateZ for smaller screens
+  @media (max-width: $tablet) {
+    .face1,
+    .face2,
+    .face3,
+    .face4,
+    .face5,
+    .face6 {
+      transform: translateZ(80px);
+    }
+  }
+  @media (max-width: $mobile) {
+    .face1,
+    .face2,
+    .face3,
+    .face4,
+    .face5,
+    .face6 {
+      transform: translateZ(60px);
+    }
+  }
 }
 
-//CardDeck.css
-.card-deck {
-  display: flex;
-  gap: 50px; /* Space between the cards */
-  justify-content: left; /* Center the cards horizontally */
-  align-items: center; /* Center the cards vertically */
-  padding: 20px;
-}
+.text-zone {
+  position: absolute;
+  left: 10%;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 60%;
+  vertical-align: middle;
+  display: table-cell;
+  max-height: 80%;
+  overflow: auto;
+  -ms-overflow-style: none;
 
-//First Letter
-.first-word-uppercase-h2::first-letter {
-  font-size: 40px;
-  color: #ffd700;
-  font-weight: bold;
-}
+  // Responsive positioning for mobile
+  @media (max-width: $mobile) {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    transform: none;
+    padding-top: 150px; // Make space for the cube
+  }
 
-// .first-word-uppercase-h2:hover {
-//   font-size: 45px;
-//   color: #fff;
-// }
+  .first-word-uppercase-h2::first-letter {
+    font-size: 40px;
+    color: #ffd700;
+    font-weight: bold;
+
+    // Responsive font size
+    @media (max-width: $tablet) {
+      font-size: 30px;
+    }
+    @media (max-width: $mobile) {
+      font-size: 25px;
+    }
+  }
+}

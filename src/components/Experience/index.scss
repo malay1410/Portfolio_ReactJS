@@ -1,126 +1,146 @@
-// // .education-list {
-
-// //     .h2 {
-// //         font-family: Arial, Helvetica, sans-serif ;
-// //         font-size: 32px;
-// //         color: #ffd700;
-// //     }
-
-// //     .education-entry {
-// //         opacity: 0;
-// //         transform: translateX(-100%);
-// //         animation: slideIn 1s forwards;
-// //         animation-delay: 0.5s;
-// //         margin-bottom: 20px; 
-// //     }
-
-// //     .education-entry:nth-child(2) {
-// //         animation-delay: 1s;
-// //     }
-// // }
-
-// // @keyframes slideIn {
-// //     to {
-// //         opacity: 1;
-// //         transform: translateX(0);
-// //     }
-// // }
-
 // .education-list {
-//     max-width: 900px;
-//     margin: 415px  190px 100px;
+//   max-width: 900px;
+//   margin: 415px 190px 100px;
+//   height: calc(100vh - 515px); // Adjust based on your header/footer
+//   overflow-y: auto; // Enables vertical scrolling
+//   padding-right: 20px; // Adds space for scrollbar
+
+//   // Custom scrollbar styling
+//   &::-webkit-scrollbar {
+//     width: 8px;
+//   }
+
+//   &::-webkit-scrollbar-track {
+//     background: rgba(255, 255, 255, 0.1);
+//     border-radius: 4px;
+//   }
+
+//   &::-webkit-scrollbar-thumb {
+//     background: #ffd700;
+//     border-radius: 4px;
+//   }
+
+//   // Rest of your existing styles
+//   display: flex;
+//   flex-direction: column;
+//   gap: 10px;
+
+//   .education-entry {
+//     background-color: rgba(58, 130, 247, 0.15);
+//     padding: 20px;
+//     border-radius: 10px;
+//     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+//     opacity: 0;
+//     transform: translateY(50px);
+//     animation: fadeInUp 1s forwards ease-in-out;
+//     margin-bottom: 20px;
+
+//     // Your existing entry styles...
+//   }
 // }
 
-// .education-list {
-//     display: flex;
-//     flex-direction: column;
-//     gap: 10px;
-
-//     .education-entry {
-//         background-color:rgba(58, 130, 247, 0.15);
-//         padding: 20px;
-//         border-radius: 10px;
-//         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-//         opacity: 0;
-//         transform: translateY(50px);
-//         animation: fadeInUp 1s forwards ease-in-out;
-//         margin-bottom: 20px;
-
-//         h2 {
-//             font-family: 'Montserrat', sans-serif;
-//             font-size: 28px;
-//             color: #ffd700;
-//             margin-bottom: 5px;
-//         }
-
-//         p {
-//             font-family: 'Roboto', sans-serif;
-//             font-size: 18px;
-//             color: #fff;
-//             margin: 0;
-//         }
-
-//         span {
-//             font-family: 'Roboto', sans-serif;
-//             font-size: 16px;
-//             color: #888;
-//         }
-//     }
-
-//     .education-entry:nth-child(1) {
-//         animation-delay: 0.5s;
-//     }
-
-//     .education-entry:nth-child(2) {
-//         animation-delay: 1s;
-//     }
-// }
-
-// @keyframes fadeInUp {
-//     to {
-//         opacity: 1;
-//         transform: translateY(0);
-//     }
-// }
-
+// Define breakpoints
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
 
 .education-list {
-    max-width: 900px;
-    margin: 415px 190px 100px;
-    height: calc(100vh - 515px); // Adjust based on your header/footer
-    overflow-y: auto; // Enables vertical scrolling
-    padding-right: 20px; // Adds space for scrollbar
+  max-width: 900px;
+  margin: 415px 190px 100px;
 
-    // Custom scrollbar styling
-    &::-webkit-scrollbar {
-        width: 8px;
+  // Responsive height calculation based on viewport height
+  height: calc(100vh - 515px);
+
+  // Adjust height for smaller screens
+  @media (max-width: $tablet) {
+    height: calc(100vh - 350px);
+  }
+  @media (max-width: $mobile) {
+    height: calc(100vh - 250px);
+  }
+
+  overflow-y: auto;
+  padding-right: 20px;
+
+  // Custom scrollbar styling
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #ffd700;
+    border-radius: 4px;
+  }
+
+  // Responsive margins
+  @media (max-width: $tablet) {
+    margin: 200px 50px 50px;
+  }
+  @media (max-width: $mobile) {
+    margin: 100px 20px 20px;
+  }
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .education-entry {
+    background-color: rgba(58, 130, 247, 0.15);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards ease-in-out;
+    margin-bottom: 20px;
+
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 28px;
+      color: #ffd700;
+      margin-bottom: 5px;
+
+      // Responsive font size
+      @media (max-width: $tablet) {
+        font-size: 24px;
+      }
+      @media (max-width: $mobile) {
+        font-size: 20px;
+      }
     }
 
-    &::-webkit-scrollbar-track {
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 4px;
+    p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      color: #fff;
+      margin: 0;
+
+      // Responsive font size
+      @media (max-width: $tablet) {
+        font-size: 16px;
+      }
+      @media (max-width: $mobile) {
+        font-size: 14px;
+      }
     }
 
-    &::-webkit-scrollbar-thumb {
-        background: #ffd700;
-        border-radius: 4px;
+    span {
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      color: #888;
+
+      // Responsive font size
+      @media (max-width: $tablet) {
+        font-size: 14px;
+      }
+      @media (max-width: $mobile) {
+        font-size: 12px;
+      }
     }
-
-    // Rest of your existing styles
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-
-    .education-entry {
-        background-color: rgba(58, 130, 247, 0.15);
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        opacity: 0;
-        transform: translateY(50px);
-        animation: fadeInUp 1s forwards ease-in-out;
-        margin-bottom: 20px;
-
-        // Your existing entry styles...
-    }
+  }
 }

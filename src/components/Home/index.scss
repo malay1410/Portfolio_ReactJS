@@ -1,108 +1,300 @@
+// @keyframes fadeIn {
+//     0% {
+//         opacity: 0;
+//     }
+//     100% {
+//         opacity: 1;
+//     }
+// }
+
+// @keyframes rotateIn {
+//     0% {
+//         transform: rotate(-360deg);
+//         opacity: 0;
+//     }
+//     100% {
+//         transform: rotate(0deg);
+//         opacity: 1;
+//     }
+// }
+
+// .home-page {
+
+//     .text-zone {
+//         position: absolute;
+//         left: 10%;
+//         top: 50%;
+//         transform: translateY(-50%);
+//         width: 40%;
+//         max-height: 90%;
+//     }
+
+//     h1 {
+//         color: #fff;
+//         font-size: 53px;
+//         margin: 0;
+//         font-family: 'Coolvetica';
+//         font-weight: 400;
+
+//         &::before {
+//             content: '<h1>';
+//             font-family: 'La Belle Aurore';
+//             color: #ffd700;
+//             font-size: 18px;
+//             position: absolute;
+//             margin-top: -40px;
+//             left: 15px;
+//             opacity: 0.6;
+//         }
+
+//         &::after {
+//             content: '<h1>';
+//             font-family: 'La Belle Aurore';
+//             color: #ffd700;
+//             font-size: 18px;
+//             position: absolute;
+//             margin-top: 18px;
+//             margin-left: 20px;
+//             animation: fadeIn 1s 1.7s backwards;
+//             opacity: 0.6;
+//         }
+
+//         img {
+//             width: 105px; /* Set the width as per the font size */
+//             height: auto; /* Maintain aspect ratio */
+//             vertical-align: middle; /* Align image with the text */
+//             margin-left: 10px; /* Adjust the spacing between the text and the image */
+//             margin-right: 0px;
+//             padding-right: 4px;
+//             opacity: 0;
+//             animation: rotateIn 1s linear both;
+//             animation-delay: 1.4s;
+
+//         }
+//     }
+
+//     h2 {
+//         color: #8d8d8d;
+//         margin-top: 20px;
+//         font-weight: 400;
+//         font-size: 11px;
+//         font-family: sans-serif;
+//         letter-spacing: 3px;
+//         animation: fadeIn 1s 1.8s backwards;
+//     }
+
+//     .flat-button {
+//         color: #ffd700;
+//         font-size: 13px;
+//         font-weight: 400;
+//         letter-spacing: 4px;
+//         font-family: sans-serif;
+//         text-decoration: none;
+//         padding: 10px 18px;
+//         border: 1px solid #ffd700;
+//         margin-top: 25px;
+//         float: left;
+//         animation: fadeIn 1s 1.8s backwards;
+//         white-space: nowrap;
+
+//         &:hover {
+//             background: #ffd700;
+//             color: #333;
+//         }
+//     }
+
+// }
+
+// Define breakpoints
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
+
+// Keyframes remain the same
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes rotateIn {
-    0% {
-        transform: rotate(-360deg);
-        opacity: 0;
-    }
-    100% {
-        transform: rotate(0deg);
-        opacity: 1;
-    }
+  0% {
+    transform: rotate(-360deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
 }
 
-
 .home-page {
+  // Responsive text zone
+  .text-zone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    max-height: 90%;
 
-    .text-zone {
-        position: absolute;
-        left: 10%;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 40%;
-        max-height: 90%;
+    // Adjust for smaller screens
+    @media (max-width: $tablet) {
+      width: 60%;
+      left: 20%;
+    }
+    @media (max-width: $mobile) {
+      width: 80%;
+      left: 10%;
+      top: 40%;
+    }
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 53px;
+    margin: 0;
+    font-family: 'Coolvetica';
+    font-weight: 400;
+
+    // Responsive font size
+    @media (max-width: $tablet) {
+      font-size: 40px;
+    }
+    @media (max-width: $mobile) {
+      font-size: 30px;
     }
 
-    h1 {
-        color: #fff;
-        font-size: 53px;
-        margin: 0;
-        font-family: 'Coolvetica';
-        font-weight: 400;
+    &::before {
+      content: '<h1>';
+      font-family: 'La Belle Aurore';
+      color: #ffd700;
+      font-size: 18px;
+      position: absolute;
+      margin-top: -40px;
+      left: 15px;
+      opacity: 0.6;
 
-        &::before {
-            content: '<h1>';
-            font-family: 'La Belle Aurore';
-            color: #ffd700;
-            font-size: 18px;
-            position: absolute;
-            margin-top: -40px;
-            left: 15px;
-            opacity: 0.6;
-        }
-
-        &::after {
-            content: '<h1>';
-            font-family: 'La Belle Aurore';
-            color: #ffd700;
-            font-size: 18px;
-            position: absolute;
-            margin-top: 18px;
-            margin-left: 20px;
-            animation: fadeIn 1s 1.7s backwards;
-            opacity: 0.6;
-        }
-
-        img {
-            width: 105px; /* Set the width as per the font size */
-            height: auto; /* Maintain aspect ratio */
-            vertical-align: middle; /* Align image with the text */
-            margin-left: 10px; /* Adjust the spacing between the text and the image */
-            margin-right: 0px;
-            padding-right: 4px;
-            opacity: 0;
-            animation: rotateIn 1s linear both;
-            animation-delay: 1.4s;
-
-        }
+      // Adjust for smaller screens
+      @media (max-width: $tablet) {
+        font-size: 14px;
+      }
+      @media (max-width: $mobile) {
+        font-size: 12px;
+      }
     }
 
-    h2 {
-        color: #8d8d8d;
-        margin-top: 20px;
-        font-weight: 400;
-        font-size: 11px;
-        font-family: sans-serif;
-        letter-spacing: 3px;
-        animation: fadeIn 1s 1.8s backwards;
+    &::after {
+      content: '<h1>';
+      font-family: 'La Belle Aurore';
+      color: #ffd700;
+      font-size: 18px;
+      position: absolute;
+      margin-top: 18px;
+      margin-left: 20px;
+      animation: fadeIn 1s 1.7s backwards;
+      opacity: 0.6;
+
+      // Adjust for smaller screens
+      @media (max-width: $tablet) {
+        font-size: 14px;
+      }
+      @media (max-width: $mobile) {
+        font-size: 12px;
+      }
     }
 
-    .flat-button {
-        color: #ffd700;
-        font-size: 13px;
-        font-weight: 400;
-        letter-spacing: 4px;
-        font-family: sans-serif;
-        text-decoration: none;
-        padding: 10px 18px;
-        border: 1px solid #ffd700;
-        margin-top: 25px;
-        float: left;
-        animation: fadeIn 1s 1.8s backwards;
-        white-space: nowrap;
+    img {
+      width: 105px; /* Set the width as per the font size */
+      height: auto; /* Maintain aspect ratio */
+      vertical-align: middle; /* Align image with the text */
+      margin-left: 10px; /* Adjust the spacing between the text and the image */
+      margin-right: 0px;
+      padding-right: 4px;
+      opacity: 0;
+      animation: rotateIn 1s linear both;
+      animation-delay: 1.4s;
 
-        &:hover {
-            background: #ffd700;
-            color: #333;
-        }
+      // Responsive image size
+      @media (max-width: $tablet) {
+        width: 80px;
+      }
+      @media (max-width: $mobile) {
+        width: 60px;
+      }
+    }
+  }
+
+  h2 {
+    color: #8d8d8d;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 11px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    animation: fadeIn 1s 1.8s backwards;
+
+    // Responsive font size
+    @media (max-width: $tablet) {
+      font-size: 9px;
+    }
+    @media (max-width: $mobile) {
+      font-size: 8px;
+    }
+  }
+
+  .flat-button {
+    color: #ffd700;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid #ffd700;
+    margin-top: 25px;
+    float: left;
+    animation: fadeIn 1s 1.8s backwards;
+    white-space: nowrap;
+
+    // Responsive button size
+    @media (max-width: $tablet) {
+      font-size: 11px;
+      padding: 8px 14px;
+    }
+    @media (max-width: $mobile) {
+      font-size: 9px;
+      padding: 6px 10px;
     }
 
-    
+    &:hover {
+      background: #ffd700;
+      color: #333;
+    }
+
+    .logo-component {
+      align-self: flex-start; // Aligns the logo to the top
+      margin-top: -50px; // Adjusts the logo's position upward
+
+      // Responsive margin
+      @media (max-width: $mobile) {
+        margin-top: -150px; // Increase the upward adjustment on smaller screens
+      }
+    }
+
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
+      // Responsive flex direction
+      @media (max-width: $mobile) {
+        // No need for additional styles here since we're already using column direction
+      }
+    }
+  }
 }

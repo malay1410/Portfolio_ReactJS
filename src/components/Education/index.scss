@@ -1,17 +1,46 @@
 // .education-list {
+//     max-width: 900px;
+//     margin: 415px  190px 100px;
+// }
 
-//     .h2 {
-//         font-family: Arial, Helvetica, sans-serif ;
-//         font-size: 32px;
-//         color: #ffd700;
-//     }
+// .education-list {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 10px;
 
 //     .education-entry {
+//         background-color:rgba(58, 130, 247, 0.15);
+//         padding: 20px;
+//         border-radius: 10px;
+//         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 //         opacity: 0;
-//         transform: translateX(-100%);
-//         animation: slideIn 1s forwards;
+//         transform: translateY(50px);
+//         animation: fadeInUp 1s forwards ease-in-out;
+//         margin-bottom: 20px;
+
+//         h2 {
+//             font-family: 'Montserrat', sans-serif;
+//             font-size: 28px;
+//             color: #ffd700;
+//             margin-bottom: 5px;
+//         }
+
+//         p {
+//             font-family: 'Roboto', sans-serif;
+//             font-size: 18px;
+//             color: #fff;
+//             margin: 0;
+//         }
+
+//         span {
+//             font-family: 'Roboto', sans-serif;
+//             font-size: 16px;
+//             color: #888;
+//         }
+//     }
+
+//     .education-entry:nth-child(1) {
 //         animation-delay: 0.5s;
-//         margin-bottom: 20px; 
 //     }
 
 //     .education-entry:nth-child(2) {
@@ -19,66 +48,101 @@
 //     }
 // }
 
-// @keyframes slideIn {
+// @keyframes fadeInUp {
 //     to {
 //         opacity: 1;
-//         transform: translateX(0);
+//         transform: translateY(0);
 //     }
 // }
 
-.education-list {
-    max-width: 900px;
-    margin: 415px  190px 100px;
-}
+// Define breakpoints
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
 
 .education-list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  max-width: 900px;
+  margin: 415px 190px 100px;
 
-    .education-entry {
-        background-color:rgba(58, 130, 247, 0.15);
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        opacity: 0;
-        transform: translateY(50px);
-        animation: fadeInUp 1s forwards ease-in-out;
-        margin-bottom: 20px;
+  // Responsive margins
+  @media (max-width: $tablet) {
+    margin: 200px 50px 50px;
+  }
+  @media (max-width: $mobile) {
+    margin: 100px 20px 20px;
+  }
 
-        h2 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 28px;
-            color: #ffd700;
-            margin-bottom: 5px;
-        }
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 
-        p {
-            font-family: 'Roboto', sans-serif;
-            font-size: 18px;
-            color: #fff;
-            margin: 0;
-        }
+  .education-entry {
+    background-color: rgba(58, 130, 247, 0.15);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards ease-in-out;
+    margin-bottom: 20px;
 
-        span {
-            font-family: 'Roboto', sans-serif;
-            font-size: 16px;
-            color: #888;
-        }
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 28px;
+      color: #ffd700;
+      margin-bottom: 5px;
+
+      // Responsive font size
+      @media (max-width: $tablet) {
+        font-size: 24px;
+      }
+      @media (max-width: $mobile) {
+        font-size: 20px;
+      }
     }
 
-    .education-entry:nth-child(1) {
-        animation-delay: 0.5s;
+    p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      color: #fff;
+      margin: 0;
+
+      // Responsive font size
+      @media (max-width: $tablet) {
+        font-size: 16px;
+      }
+      @media (max-width: $mobile) {
+        font-size: 14px;
+      }
     }
 
-    .education-entry:nth-child(2) {
-        animation-delay: 1s;
+    span {
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      color: #888;
+
+      // Responsive font size
+      @media (max-width: $tablet) {
+        font-size: 14px;
+      }
+      @media (max-width: $mobile) {
+        font-size: 12px;
+      }
     }
+  }
+
+  .education-entry:nth-child(1) {
+    animation-delay: 0.5s;
+  }
+
+  .education-entry:nth-child(2) {
+    animation-delay: 1s;
+  }
 }
 
 @keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

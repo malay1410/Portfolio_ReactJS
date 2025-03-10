@@ -1,66 +1,153 @@
+// @keyframes bounceIn {
+//     0% {
+//         transform: scale(0.3);
+//         opacity: 0;
+//     }
+//     50% {
+//         transform: scale(1.05);
+//         opacity: 1;
+//     }
+//     70% {
+//         transform: scale(0.9);
+//     }
+//     100% {
+//         transform: scale(1);
+//     }
+// }
+
+// @keyframes rubberBand {
+//     0% {
+//       transform: scale3d(1, 1, 1);
+//     }
+//     30% {
+//       transform: scale3d(1.25, 0.75, 1);
+//     }
+//     40% {
+//       transform: scale3d(0.75, 1.25, 1);
+//     }
+//     50% {
+//       transform: scale3d(1.15, 0.85, 1);
+//     }
+//     65% {
+//       transform: scale3d(0.95, 1.05, 1);
+//     }
+//     75% {
+//       transform: scale3d(1.05, 0.95, 1);
+//     }
+//     100% {
+//       transform: scale3d(1, 1, 1);
+//     }
+//   }
+
+// .text-animate {
+//     display: inline-block;
+//     animation: bounceIn 1s 1s;
+//     animation-fill-mode: forwards;
+//     //animation-iteration-count: infinite; //This keeps the animation running indefinitely
+//     min-width: 10px;
+// }
+
+// .text-animate-hover {
+//     min-width: 10px;
+//     display: inline-block;
+//     animation-fill-mode: both;
+
+//     &:hover {
+//         animation: rubberBand 1s;
+//         color: #ffd700;
+//     }
+// }
+
+// @for $i from 1 through 35 {
+//     .text-animate._#{$i} {
+//         animation-delay: $i * 0.1s;
+//     }
+// }
+
+// Define breakpoints
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
+
 @keyframes bounceIn {
-    0% {
-        transform: scale(0.3);
-        opacity: 0;
-    }
-    50% {
-        transform: scale(1.05);
-        opacity: 1;
-    }
-    70% {
-        transform: scale(0.9);
-    }
-    100% {
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes rubberBand {
-    0% {
-      transform: scale3d(1, 1, 1);
-    }
-    30% {
-      transform: scale3d(1.25, 0.75, 1);
-    }
-    40% {
-      transform: scale3d(0.75, 1.25, 1);
-    }
-    50% {
-      transform: scale3d(1.15, 0.85, 1);
-    }
-    65% {
-      transform: scale3d(0.95, 1.05, 1);
-    }
-    75% {
-      transform: scale3d(1.05, 0.95, 1);
-    }
-    100% {
-      transform: scale3d(1, 1, 1);
-    }
+  0% {
+    transform: scale3d(1, 1, 1);
   }
-  
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
 
 .text-animate {
-    display: inline-block;
-    animation: bounceIn 1s 1s;
-    animation-fill-mode: forwards;
-    //animation-iteration-count: infinite; //This keeps the animation running indefinitely
-    min-width: 10px;
+  display: inline-block;
+  animation: bounceIn 1s 1s;
+  animation-fill-mode: forwards;
+  min-width: 10px;
+
+  // Responsive animation delay
+  @media (max-width: $mobile) {
+    animation-duration: 0.8s;
+    animation-delay: 0.8s;
+  }
 }
 
 .text-animate-hover {
-    min-width: 10px;
-    display: inline-block;
-    animation-fill-mode: both;
+  min-width: 10px;
+  display: inline-block;
+  animation-fill-mode: both;
 
+  &:hover {
+    animation: rubberBand 1s;
+    color: #ffd700;
+  }
+
+  // Responsive hover animation
+  @media (max-width: $mobile) {
     &:hover {
-        animation: rubberBand 1s;
-        color: #ffd700;
+      animation-duration: 0.8s;
     }
+  }
 }
 
 @for $i from 1 through 35 {
-    .text-animate._#{$i} {
-        animation-delay: $i * 0.1s;
+  .text-animate._#{$i} {
+    animation-delay: $i * 0.1s;
+
+    // Responsive animation delay
+    @media (max-width: $mobile) {
+      animation-delay: $i * 0.08s;
     }
+  }
 }

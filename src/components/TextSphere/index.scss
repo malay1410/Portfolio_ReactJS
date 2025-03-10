@@ -1,33 +1,89 @@
+// .text-shpere {
+//     position: absolute;
+//     top: 0;
+//     width: 100%;
+//     display: flex;
+//     justify-content: right;
+//     align-items: center;
+// }
+
+// .tagcloud {
+//     display: inline-block;
+//     top: 0;
+//     left: 0;
+//     font-family: 'Inter', sans-serif;
+//     font-weight: 600;
+//     letter-spacing: 0.0625em;
+//     font-size: 1.3em;
+// }
+
+// /* Change color of each text in sphere on hover   */
+// .tagcloud--item {
+//     color: #00ffffff;
+//     text-transform: uppercase;
+// }
+
+// .tagcloud--item:hover {
+//     color: #ffd700;
+//     text-shadow: 0 0 2px #FFD700, /* Horizontal and vertical glow */
+//                  0 0 4px #FF8C00,
+//                  0 0 6px #FF4500,
+//                  0 0 8px #FF6374;
+// }
+
+// Define breakpoints
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
+
 .text-shpere {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: right;
-    align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+
+  // Responsive alignment
+  @media (max-width: $tablet) {
+    justify-content: center;
+  }
+  @media (max-width: $mobile) {
+    justify-content: center;
+  }
 }
 
 .tagcloud {
-    display: inline-block;
-    top: 0;
-    left: 0;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    letter-spacing: 0.0625em;
-    font-size: 1.3em;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.0625em;
+  font-size: 1.3em;
+
+  // Responsive font size
+  @media (max-width: $tablet) {
+    font-size: 1.1em;
+  }
+  @media (max-width: $mobile) {
+    font-size: 0.9em;
+  }
 }
 
-/* Change color of each text in sphere on hover   */
 .tagcloud--item {
-    color: #00ffffff;
-    text-transform: uppercase;
+  color: #00ffffff;
+  text-transform: uppercase;
 }
 
 .tagcloud--item:hover {
-    color: #ffd700;
-    text-shadow: 0 0 2px #FFD700, /* Horizontal and vertical glow */
-                 0 0 4px #FF8C00, 
-                 0 0 6px #FF4500, 
-                 0 0 8px #FF6374;
+  color: #ffd700;
+  text-shadow: 0 0 2px #ffd700, 0 0 4px #ff8c00, 0 0 6px #ff4500,
+    0 0 8px #ff6374;
+
+  // Responsive text shadow
+  @media (max-width: $mobile) {
+    text-shadow: 0 0 1px #ffd700, 0 0 2px #ff8c00, 0 0 3px #ff4500,
+      0 0 4px #ff6374;
+  }
 }
-            

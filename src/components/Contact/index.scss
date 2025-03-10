@@ -1,104 +1,260 @@
+// .contact-form {
+//     width: 50%;
+//     margin-top: 20px;
+// }
+
+// ul {
+//     padding: 0;
+//     margin: 0;
+
+//     li {
+//         padding: 0;
+//         margin: 0;
+//         list-style: none;
+//         margin-bottom: 10px;
+//         overflow: hidden;
+//         display: block;
+//         position: relative;
+//         opacity: 0;
+//         animation: fadeInUp 2s 2s;
+//         animation-fill-mode: forwards;
+//         clear: both;
+//     }
+
+//     li.half {
+//         width: 49%;
+//         margin-left: 2%;
+//         float: left;
+//         clear: none;
+
+//         &:first-child {
+//             margin-left: 0;
+//         }
+//     }
+// }
+
+// input[type='text'],
+// input[type='email'] {
+//     width: 100%;
+//     border: 0;
+//     background: #115173;
+//     height: 50px;
+//     font-size: 16px;
+//     color: #fff;
+//     padding: 0 20px;
+//     box-sizing: border-box;
+// }
+
+// textarea {
+//     width: 100;
+//     border: 0;
+//     background: #115173;
+//     height: 50px;
+//     font-size: 16px;
+//     color: #fff;
+//     padding: 30px;
+//     min-height: 150px;
+//     min-width: 675px;
+//     box-sizing: border-box;
+// }
+
+// .flat-button {
+//     color: #ffd700;
+//     background: 0 0;
+//     font-size: 11px;
+//     letter-spacing: 3px;
+//     text-decoration: none;
+//     padding: 8px 10px;
+//     border: 1px solid #ffd700;
+//     float: right;
+//     border-radius: 4px;
+// }
+
+// .info-map {
+//     position: absolute;
+//     background: #000;
+//     top: 50px;
+//     right: 30%;
+//     z-index: 999999;
+//     width: 267px;
+//     padding: 20px;
+//     color: #fff;
+//     font-family: 'Helvetica';
+//     font-size: 17px;
+//     font-weight: 300;
+//     opacity: 0;
+//     animation: fadeIn 1s 1.5s;
+//     animation-fill-mode: forwards;
+
+//     span {
+//       font-size: 16px;
+
+//       span {
+//         color: #ffd700;
+//       }
+//     }
+//   }
+
+//   .map-wrap {
+//     background: rgba(8, 253, 216, 0.1);
+//     float: right;
+//     width: 53%;
+//     height: 125%;
+//     margin-top: -3%;
+//   }
+
+// Define breakpoints
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
+
 .contact-form {
-    width: 50%;
-    margin-top: 20px;
+  width: 50%;
+  margin-top: 20px;
+
+  // Responsive width
+  @media (max-width: $tablet) {
+    width: 70%;
+  }
+  @media (max-width: $mobile) {
+    width: 90%;
+  }
 }
 
 ul {
+  padding: 0;
+  margin: 0;
+
+  li {
     padding: 0;
     margin: 0;
+    list-style: none;
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    opacity: 0;
+    animation: fadeInUp 2s 2s;
+    animation-fill-mode: forwards;
+    clear: both;
+  }
 
-    li {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        margin-bottom: 10px;
-        overflow: hidden;
-        display: block;
-        position: relative;
-        opacity: 0;
-        animation: fadeInUp 2s 2s;
-        animation-fill-mode: forwards;
-        clear: both;
+  li.half {
+    width: 49%;
+    margin-left: 2%;
+    float: left;
+    clear: none;
+
+    &:first-child {
+      margin-left: 0;
     }
 
-    li.half {
-        width: 49%;
-        margin-left: 2%;
-        float: left;
-        clear: none;
-
-        &:first-child {
-            margin-left: 0;
-        }
-    }   
+    // Responsive layout for smaller screens
+    @media (max-width: $tablet) {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+  }
 }
 
 input[type='text'],
 input[type='email'] {
-    width: 100%;
-    border: 0;
-    background: #115173;
-    height: 50px;
-    font-size: 16px;
-    color: #fff;
-    padding: 0 20px;
-    box-sizing: border-box;
+  width: 100%;
+  border: 0;
+  background: #115173;
+  height: 50px;
+  font-size: 16px;
+  color: #fff;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  // Responsive font size
+  @media (max-width: $mobile) {
+    font-size: 14px;
+  }
 }
 
 textarea {
-    width: 100;
-    border: 0;
-    background: #115173;
-    height: 50px;
-    font-size: 16px;
-    color: #fff;
-    padding: 30px;
-    min-height: 150px;
-    min-width: 675px;
-    box-sizing: border-box;
+  width: 100%;
+  border: 0;
+  background: #115173;
+  height: 150px; // Adjusted to be more responsive
+  font-size: 16px;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+
+  // Responsive font size
+  @media (max-width: $mobile) {
+    font-size: 14px;
+  }
 }
 
-.flat-button {  
-    color: #ffd700;
-    background: 0 0;
-    font-size: 11px;
-    letter-spacing: 3px;
-    text-decoration: none;
-    padding: 8px 10px;
-    border: 1px solid #ffd700;
-    float: right;
-    border-radius: 4px;
+.flat-button {
+  color: #ffd700;
+  background: 0 0;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  padding: 8px 10px;
+  border: 1px solid #ffd700;
+  float: right;
+  border-radius: 4px;
+
+  // Responsive font size
+  @media (max-width: $mobile) {
+    font-size: 9px;
+  }
 }
 
 .info-map {
-    position: absolute;
-    background: #000;
-    top: 50px;
-    right: 30%;
-    z-index: 999999;
-    width: 267px;
-    padding: 20px;
-    color: #fff;
-    font-family: 'Helvetica';
-    font-size: 17px;
-    font-weight: 300;
-    opacity: 0;
-    animation: fadeIn 1s 1.5s;
-    animation-fill-mode: forwards;
-  
+  position: absolute;
+  background: #000;
+  top: 50px;
+  right: 30%;
+  z-index: 999999;
+  width: 267px;
+  padding: 20px;
+  color: #fff;
+  font-family: 'Helvetica';
+  font-size: 17px;
+  font-weight: 300;
+  opacity: 0;
+  animation: fadeIn 1s 1.5s;
+  animation-fill-mode: forwards;
+
+  span {
+    font-size: 16px;
+
     span {
-      font-size: 16px;
-  
-      span {
-        color: #ffd700;
-      }
+      color: #ffd700;
     }
   }
 
-  .map-wrap {
-    background: rgba(8, 253, 216, 0.1);
-    float: right;
-    width: 53%;
-    height: 125%;
-    margin-top: -3%;
+  // Responsive width and position
+  @media (max-width: $tablet) {
+    width: 200px;
+    right: 20%;
   }
+  @media (max-width: $mobile) {
+    width: 150px;
+    right: 10%;
+  }
+}
+
+.map-wrap {
+  background: rgba(8, 253, 216, 0.1);
+  float: right;
+  width: 53%;
+  height: 125%;
+  margin-top: -3%;
+
+  // Responsive width
+  @media (max-width: $tablet) {
+    width: 70%;
+  }
+  @media (max-width: $mobile) {
+    width: 90%;
+  }
+}

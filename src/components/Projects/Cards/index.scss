@@ -1,100 +1,263 @@
-/* Container for the card */
+// /* Container for the card */
+// .card-container {
+//     width: 300px;
+//     height: 200px;
+//     padding: 40px 40px;
+// }
+
+// .card {
+//     width: 100%;
+//     height: 100%;
+//     position: relative;
+//     transition: transform 0.6s ease;
+//     cursor: pointer;
+// }
+
+// .card:hover {
+//     transform: scale(1.05);
+//     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Enhanced hover shadow */
+// }
+
+// /* Card front */
+// .card-front {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     border-radius: 10px;
+//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+//     padding: 20px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     background-color: rgba(58, 130, 247, 0.15); /* Light tint of primary color */
+// }
+
+// .card-image {
+//     max-width: 100px;
+//     max-height: 100px;
+//     object-fit: cover;
+//     border-radius: 10px;
+//     margin-bottom: 15px;
+//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle image shadow */
+// }
+
+// /* H3 Styling */
+// .card-front h3 {
+//     font-family: 'Roboto', sans-serif;
+//     font-size: 1.8em;
+//     font-weight: 600;
+//     color: #ffd700;
+//     margin-bottom: 10px;
+//     letter-spacing: 1.5px;
+//     text-transform: uppercase;
+//     text-align: center;
+//     line-height: 1;
+// }
+
+// .card-front h3::after {
+//     content: "";
+//     display: block;
+//     width: 50px;
+//     height: 3px;
+//     background-color: #ffd700; /* Primary accent color */
+//     margin: 5px auto 0;
+// }
+
+// /* Button (Anchor) Styling */
+// .card-front a {
+//     display: inline-block;
+//     padding: 10px 20px;
+//     text-decoration: none;
+//     background-color: #3A82F7; /* Refined primary color */
+//     color: #ffd700;
+//     font-weight: bold;
+//     border-radius: 5px;
+//     transition: background-color 0.3s ease, box-shadow 0.3s ease;
+//     margin-top: 10px;
+//     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+// }
+
+// .card-front a:hover {
+//     background-color: #2851A3; /* Darker hover color */
+//     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+// }
+
+// /* Paragraph Styling */
+// .card-front p {
+//     font-family: 'Roboto', sans-serif;
+//     font-size: 1em;
+//     line-height: 1.6;
+//     color: #ffd700; /* Softer gray for paragraph text */
+//     margin-bottom: 20px;
+//     text-align: justify;
+//     letter-spacing: 0.3px;
+// }
+
+// .card-front p strong {
+//     color: #3A82F7; /* Highlight text with primary accent color */
+//     font-weight: 600;
+// }
+
+// Define breakpoints
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
+
 .card-container {
-    width: 300px;
-    height: 200px;
-    padding: 40px 40px;
+  width: 300px;
+  height: 200px;
+  padding: 40px 40px;
+
+  // Responsive size
+  @media (max-width: $tablet) {
+    width: 250px;
+    height: 180px;
+    padding: 30px 30px;
+  }
+  @media (max-width: $mobile) {
+    width: 200px;
+    height: 150px;
+    padding: 20px 20px;
+  }
 }
 
 .card {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transition: transform 0.6s ease;
-    cursor: pointer;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.6s ease;
+  cursor: pointer;
 }
 
 .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Enhanced hover shadow */
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
-/* Card front */
 .card-front {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(58, 130, 247, 0.15); /* Light tint of primary color */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(58, 130, 247, 0.15);
+
+  // Responsive padding
+  @media (max-width: $tablet) {
+    padding: 15px;
+  }
+  @media (max-width: $mobile) {
+    padding: 10px;
+  }
 }
 
 .card-image {
-    max-width: 100px;
-    max-height: 100px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle image shadow */
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  // Responsive image size
+  @media (max-width: $tablet) {
+    max-width: 80px;
+    max-height: 80px;
+  }
+  @media (max-width: $mobile) {
+    max-width: 60px;
+    max-height: 60px;
+  }
 }
 
-/* H3 Styling */
 .card-front h3 {
-    font-family: 'Roboto', sans-serif; 
-    font-size: 1.8em; 
-    font-weight: 600;
-    color: #ffd700; 
-    margin-bottom: 10px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase; 
-    text-align: center;
-    line-height: 1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #ffd700;
+  margin-bottom: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+
+  // Responsive font size
+  @media (max-width: $tablet) {
+    font-size: 1.5em;
+  }
+  @media (max-width: $mobile) {
+    font-size: 1.2em;
+  }
 }
 
 .card-front h3::after {
-    content: "";
-    display: block;
-    width: 50px;
-    height: 3px;
-    background-color: #ffd700; /* Primary accent color */
-    margin: 5px auto 0;
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #ffd700;
+  margin: 5px auto 0;
+
+  // Responsive width
+  @media (max-width: $tablet) {
+    width: 40px;
+  }
+  @media (max-width: $mobile) {
+    width: 30px;
+  }
 }
 
-/* Button (Anchor) Styling */
 .card-front a {
-    display: inline-block;
-    padding: 10px 20px;
-    text-decoration: none;
-    background-color: #3A82F7; /* Refined primary color */
-    color: #ffd700; 
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    margin-top: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #3a82f7;
+  color: #ffd700;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  // Responsive padding
+  @media (max-width: $tablet) {
+    padding: 8px 16px;
+  }
+  @media (max-width: $mobile) {
+    padding: 6px 12px;
+  }
 }
 
 .card-front a:hover {
-    background-color: #2851A3; /* Darker hover color */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  background-color: #2851a3;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Paragraph Styling */
 .card-front p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em; 
-    line-height: 1.6;
-    color: #ffd700; /* Softer gray for paragraph text */
-    margin-bottom: 20px;
-    text-align: justify;
-    letter-spacing: 0.3px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  line-height: 1.6;
+  color: #ffd700;
+  margin-bottom: 20px;
+  text-align: justify;
+  letter-spacing: 0.3px;
+
+  // Responsive font size
+  @media (max-width: $tablet) {
+    font-size: 0.9em;
+  }
+  @media (max-width: $mobile) {
+    font-size: 0.8em;
+  }
 }
 
 .card-front p strong {
-    color: #3A82F7; /* Highlight text with primary accent color */
-    font-weight: 600;
+  color: #3a82f7;
+  font-weight: 600;
 }
