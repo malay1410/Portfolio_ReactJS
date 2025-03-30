@@ -21,8 +21,12 @@ const ParticlesComponent = (props) => {
     () => ({
       background: {
         color: {
-          value: "#000000",
+          value: "#000000", // Default to black, but we add a gradient overlay
         },
+        image: "linear-gradient(to bottom, #000000, #05050f, #0f172a, #1e3a8a)",
+        position: "center",
+        repeat: "no-repeat",
+        size: "cover",
       },
       fpsLimit: 120,
       interactivity: {
