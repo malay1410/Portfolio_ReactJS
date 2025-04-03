@@ -65,7 +65,7 @@ export const Home = () => {
 
           <div className="flex justify-center space-x-4">
             <ScrollLink
-              to="projects"
+              to="prismap-projects"
               smooth={true}
               duration={800}
               className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden cursor-pointer hover:-translate-y-0.5 hover:shadow-lg hover:shadow-blue-500/50"
@@ -73,14 +73,14 @@ export const Home = () => {
               View Projects
             </ScrollLink>
 
-            <ScrollLink
+            {/* <ScrollLink
               to="contact"
               smooth={true}
               duration={800}
               className="border border-blue-500/50 text-white py-3 px-6 rounded font-medium transition-all duration-200 cursor-pointer hover:-translate-y-0.5 hover:shadow-lg hover:shadow-blue-500/50 hover:bg-blue-500/10"
             >
               Contact Me
-            </ScrollLink>
+            </ScrollLink> */}
           </div>
         </div>
       </RevealOnScroll>

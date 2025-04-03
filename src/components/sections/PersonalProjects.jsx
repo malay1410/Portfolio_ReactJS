@@ -233,7 +233,9 @@ export const PersonalProjects = () => {
                   className="w-full h-60 object-cover rounded-lg mb-4"
                 />
 
-                <h3 className="text-xl font-bold mb-2">Match 3 with PixiJS</h3>
+                <h3 className="text-xl font-bold mb-2">
+                  Black Jack with PixiJS
+                </h3>
                 <p className="text-gray-400 mb-4">
                   A dynamic Blackjack game built with PixiJS, offering
                   role-based gameplay and customizable bet settings. Featuring

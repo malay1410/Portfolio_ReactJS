@@ -33,8 +33,11 @@ export const PrismapProjects = () => {
                   className="w-full h-60 object-cover rounded-lg mb-4"
                 />
 
-                <h3 className="text-xl font-bold mb-2">Exposome</h3>
-                <ul className="text-gray-400 mb-4 list-disc">
+                <h3 className="text-xl font-bold">Exposome</h3>
+                <h3 className="text-lg font-bold text-blue-500">
+                  Timeline 10 weeks
+                </h3>
+                <ul className="text-gray-400 text-sm mb-4 list-disc ">
                   <li>
                     Architected a dynamic, user-friendly React interface for the
                     Exposome project, empowering users to effortlessly upload
@@ -52,7 +55,6 @@ export const PrismapProjects = () => {
                     streamlining the codebase and accelerating delivery ahead of
                     timelines.
                   </li>
-                  <li>Timeline 10 weeks</li>
                 </ul>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {["React", "Node.js", "FastAPI"].map((tech, key) => (
@@ -98,7 +100,10 @@ export const PrismapProjects = () => {
                   className="w-full h-60 object-cover rounded-lg mb-4"
                 />
 
-                <h3 className="text-xl font-bold mb-2">My Surgery Risk</h3>
+                <h3 className="text-xl font-bold">My Surgery Risk</h3>
+                <h3 className="text-lg font-bold text-blue-500">
+                  Timeline 7 weeks
+                </h3>
                 <ul className="text-gray-400 mb-4 list-disc">
                   <li>
                     Quickly brought complex wireframes to life using React,
@@ -120,7 +125,6 @@ export const PrismapProjects = () => {
                     dependencies and refactoring legacy code, delivering a
                     clean, responsive UI with improved maintainability.
                   </li>
-                  <li>Timeline 7 weeks</li>
                 </ul>
 
                 <div className="flex flex-wrap gap-2 mb-4">
@@ -158,7 +162,10 @@ export const PrismapProjects = () => {
                   className="w-full h-60 object-cover rounded-lg mb-4"
                 />
 
-                <h3 className="text-xl font-bold mb-2">Shared Access Drive</h3>
+                <h3 className="text-xl font-bold">Shared Access Drive</h3>
+                <h3 className="text-lg font-bold text-blue-500">
+                  Timeline 2 weeks
+                </h3>
                 <ul className="text-gray-400 mb-4 list-disc">
                   <li>
                     Automated shared drive access requests, reducing manual
@@ -178,7 +185,6 @@ export const PrismapProjects = () => {
                     Resulted in an 80% reduction in manual effort and cut
                     request processing time from ~2 days to under 30 minutes.
                   </li>
-                  <li>Timeline 2 weeks</li>
                 </ul>
 
                 <div className="flex flex-wrap gap-2 mb-4">
@@ -216,14 +222,16 @@ export const PrismapProjects = () => {
                   className="w-full h-60 object-cover rounded-lg mb-4"
                 />
 
-                <h3 className="text-xl font-bold mb-2">Data Collation</h3>
+                <h3 className="text-xl font-bold">Data Collation</h3>
+                <h3 className="text-lg font-bold text-blue-500">
+                  Timeline 2 weeks
+                </h3>
                 <ul className="text-gray-400 mb-4 list-disc">
                   <li>
                     Collated and structured 500+ datasets to build a centralized
                     inventory, streamlining data accessibility and accelerating
                     research efforts.
                   </li>
-                  <li>Timeline 2 weeks</li>
                 </ul>
 
                 <div className="flex flex-wrap gap-2 mb-4">
@@ -261,7 +269,10 @@ export const PrismapProjects = () => {
                   className="w-full h-60 object-cover rounded-lg mb-4"
                 />
 
-                <h3 className="text-xl font-bold mb-2">GitHub Repo Revamp</h3>
+                <h3 className="text-xl font-bold">GitHub Repo Revamp</h3>
+                <h3 className="text-lg font-bold text-blue-500">
+                  Timeline 1 week
+                </h3>
                 <ul className="text-gray-400 mb-4 list-disc">
                   <li>
                     Restructured and standardized the Git repository to improve
@@ -279,7 +290,6 @@ export const PrismapProjects = () => {
                     Improved collaboration by establishing a consistent version
                     control workflow across the team.
                   </li>
-                  <li>Timeline 1 weeks</li>
                 </ul>
 
                 <div className="flex flex-wrap gap-2 mb-4">
