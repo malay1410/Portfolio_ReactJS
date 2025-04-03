@@ -34,8 +34,8 @@ export const PrismapProjects = () => {
                 />
 
                 <h3 className="text-xl font-bold">Exposome</h3>
-                <h3 className="text-lg font-bold text-blue-500">
-                  Timeline 10 weeks
+                <h3 className="text-md font-semibold text-blue-500">
+                  Timeline: 10 weeks
                 </h3>
                 <ul className="text-gray-400 text-sm mb-4 list-disc ">
                   <li>
@@ -101,8 +101,8 @@ export const PrismapProjects = () => {
                 />
 
                 <h3 className="text-xl font-bold">My Surgery Risk</h3>
-                <h3 className="text-lg font-bold text-blue-500">
-                  Timeline 7 weeks
+                <h3 className="text-md font-semibold text-blue-500">
+                  Timeline: 7 weeks
                 </h3>
                 <ul className="text-gray-400 text-sm mb-4 list-disc">
                   <li>
@@ -163,8 +163,8 @@ export const PrismapProjects = () => {
                 />
 
                 <h3 className="text-xl font-bold">Shared Access Drive</h3>
-                <h3 className="text-lg font-bold text-blue-500">
-                  Timeline 2 weeks
+                <h3 className="text-md font-semibold text-blue-500">
+                  Timeline: 2 weeks
                 </h3>
                 <ul className="text-gray-400 text-sm mb-4 list-disc">
                   <li>
@@ -223,8 +223,8 @@ export const PrismapProjects = () => {
                 />
 
                 <h3 className="text-xl font-bold">Data Collation</h3>
-                <h3 className="text-lg font-bold text-blue-500">
-                  Timeline 2 weeks
+                <h3 className="text-md font-semibold text-blue-500">
+                  Timeline: 2 weeks
                 </h3>
                 <ul className="text-gray-400 text-sm mb-4 list-disc">
                   <li>
@@ -270,8 +270,8 @@ export const PrismapProjects = () => {
                 />
 
                 <h3 className="text-xl font-bold">GitHub Repo Revamp</h3>
-                <h3 className="text-lg font-bold text-blue-500">
-                  Timeline 1 week
+                <h3 className="text-md font-semibold text-blue-500">
+                  Timeline: 1 week
                 </h3>
                 <ul className="text-gray-400 text-sm mb-4 list-disc">
                   <li>

@@ -63,7 +63,8 @@ export const About = () => {
   return (
     <section
       id="skills"
-      className="min-h-screen flex items-center justify-center py-20 "
+      className="min-h-[80vh] py-20 px-4 w-full bg-black"
+      // min-h-screen flex items-center justify-center py-20
     >
       <RevealOnScroll>
         <div className="max-w-5xl mx-auto px-4">

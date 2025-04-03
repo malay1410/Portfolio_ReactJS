@@ -22,7 +22,13 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
       </button>
 
       {/* Menu Links */}
-      {["home", "about", "projects", "contact"].map((section) => (
+      {[
+        "home",
+        "skills",
+        "prismap-projects",
+        "future-plans",
+        "personal-projects",
+      ].map((section) => (
         <a
           key={section}
           href={`#${section}`}
@@ -34,12 +40,14 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
                           : "opacity-0 translate-y-5"
                       }`}
         >
-          {section.charAt(0).toUpperCase() + section.slice(1)}
+          {section
+            .split("-")
+            .map((s) => s.charAt(0).toUpperCase() + s.slice(1) + " ")}
         </a>
       ))}
 
       {/* Resume Button with Glowing Effect */}
-      <a
+      {/* <a
         href="https://drive.google.com/file/d/1fddrncXUHLipiBvgGPtOBQcgMZSRM8Do/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
@@ -52,7 +60,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
                     animate-pulse shadow-lg shadow-blue-500/50 hover:shadow-blue-500/80`}
       >
         Resume
-      </a>
+      </a> */}
     </div>
   );
 };
