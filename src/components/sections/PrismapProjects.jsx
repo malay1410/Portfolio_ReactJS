@@ -104,7 +104,7 @@ export const PrismapProjects = () => {
                 <h3 className="text-lg font-bold text-blue-500">
                   Timeline 7 weeks
                 </h3>
-                <ul className="text-gray-400 mb-4 list-disc">
+                <ul className="text-gray-400 text-sm mb-4 list-disc">
                   <li>
                     Quickly brought complex wireframes to life using React,
                     building accessible, ADA-compliant interfaces that shipped
@@ -166,7 +166,7 @@ export const PrismapProjects = () => {
                 <h3 className="text-lg font-bold text-blue-500">
                   Timeline 2 weeks
                 </h3>
-                <ul className="text-gray-400 mb-4 list-disc">
+                <ul className="text-gray-400 text-sm mb-4 list-disc">
                   <li>
                     Automated shared drive access requests, reducing manual
                     intervention and accelerating team onboarding and
@@ -226,7 +226,7 @@ export const PrismapProjects = () => {
                 <h3 className="text-lg font-bold text-blue-500">
                   Timeline 2 weeks
                 </h3>
-                <ul className="text-gray-400 mb-4 list-disc">
+                <ul className="text-gray-400 text-sm mb-4 list-disc">
                   <li>
                     Collated and structured 500+ datasets to build a centralized
                     inventory, streamlining data accessibility and accelerating
@@ -273,7 +273,7 @@ export const PrismapProjects = () => {
                 <h3 className="text-lg font-bold text-blue-500">
                   Timeline 1 week
                 </h3>
-                <ul className="text-gray-400 mb-4 list-disc">
+                <ul className="text-gray-400 text-sm mb-4 list-disc">
                   <li>
                     Restructured and standardized the Git repository to improve
                     code organization and maintainability.

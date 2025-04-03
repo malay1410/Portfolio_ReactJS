@@ -11,6 +11,7 @@ import { About } from "./components/sections/About";
 import { PrismapProjects } from "./components/sections/PrismapProjects";
 import { FuturePlans } from "./components/sections/FuturePlans";
 import { PersonalProjects } from "./components/sections/PersonalProjects";
+import { Footer } from "./components/Footer";
 
 import ParticlesComponent from "./components/particles";
 
@@ -34,6 +35,7 @@ function App() {
         <PrismapProjects />
         <FuturePlans />
         <PersonalProjects />
+        <Footer />
       </div>
     </>
   );

@@ -37,7 +37,7 @@ export const PersonalProjects = () => {
                 />
 
                 <h3 className="text-xl font-bold mb-2">Quick Quiz</h3>
-                <p className="text-gray-400 mb-4">
+                <p className="text-gray-400 text-sm mb-4">
                   QuickQuiz is an AI-powered learning platform built with React
                   and OpenAI API, featuring intelligent document summarization,
                   doubt resolution, and dynamic quiz generation. Enhanced with
@@ -91,7 +91,7 @@ export const PersonalProjects = () => {
                 <h3 className="text-xl font-bold mb-2">
                   Decentralized Car Rental App
                 </h3>
-                <p className="text-gray-400 mb-4">
+                <p className="text-gray-400 text-sm mb-4">
                   The project enables direct car rentals between users,
                   eliminating middlemen, with a user-friendly interface and
                   secure blockchain-based decentralized transactions for
@@ -136,7 +136,7 @@ export const PersonalProjects = () => {
                 />
 
                 <h3 className="text-xl font-bold mb-2">Gator Library</h3>
-                <p className="text-gray-400 mb-4">
+                <p className="text-gray-400 text-sm mb-4">
                   Developed an advanced Library Management System using
                   Red-Black trees and Binary Min-Heaps, optimizing book
                   reservations and enhancing efficiency in large-scale
@@ -182,7 +182,7 @@ export const PersonalProjects = () => {
                 <h3 className="text-xl font-bold mb-2">
                   Blockchain Based Student Verification Technology
                 </h3>
-                <p className="text-gray-400 mb-4">
+                <p className="text-gray-400 text-sm mb-4">
                   Developed a blockchain-based system for comprehensive
                   candidate validation, automating data collection and
                   verification. Enhanced recruitment process reliability and
@@ -218,7 +218,6 @@ export const PersonalProjects = () => {
                 </div>
               </div>
             </a>
-
             {/* Black Jack with PixiJS  */}
             <a
               href="https://github.com/malay1410/match3-pixijs"
@@ -236,7 +235,7 @@ export const PersonalProjects = () => {
                 <h3 className="text-xl font-bold mb-2">
                   Black Jack with PixiJS
                 </h3>
-                <p className="text-gray-400 mb-4">
+                <p className="text-gray-400 text-sm mb-4">
                   A dynamic Blackjack game built with PixiJS, offering
                   role-based gameplay and customizable bet settings. Featuring
                   smooth animations and an engaging user interface for immersive
@@ -264,7 +263,6 @@ export const PersonalProjects = () => {
                 </div>
               </div>
             </a>
-
             {/* Chat App using Flutter  */}
             <a
               href="https://github.com/malay1410/chat_app"
@@ -282,7 +280,7 @@ export const PersonalProjects = () => {
                 <h3 className="text-xl font-bold mb-2">
                   Chat App using Flutter
                 </h3>
-                <p className="text-gray-400 mb-4">
+                <p className="text-gray-400 text-sm mb-4">
                   Developed a cross-platform chat application using Flutter and
                   Firebase, featuring real-time messaging, user authentication,
                   multimedia sharing, and an intuitive UI for seamless
@@ -318,7 +316,6 @@ export const PersonalProjects = () => {
                 </div>
               </div>
             </a>
-
             {/* Match 3 with PixiJS  */}
             <a
               href="https://github.com/malay1410/match3-pixijs"
@@ -334,7 +331,7 @@ export const PersonalProjects = () => {
                 />
 
                 <h3 className="text-xl font-bold mb-2">Match 3 with PixiJS</h3>
-                <p className="text-gray-400 mb-4">
+                <p className="text-gray-400 text-sm mb-4">
                   A visually engaging Match 3 puzzle game built with PixiJS,
                   featuring smooth animations, dynamic effects, and intuitive
                   gameplay. Optimized for performance, delivering an interactive
@@ -362,7 +359,6 @@ export const PersonalProjects = () => {
                 </div>
               </div>
             </a>
-
             {/* Theatre Reservation System  */}
             <a
               href="https://github.com/malay1410/theatre-reservation-system"
@@ -380,7 +376,7 @@ export const PersonalProjects = () => {
                 <h3 className="text-xl font-bold mb-2">
                   Theatre Reservation System
                 </h3>
-                <p className="text-gray-400 mb-4">
+                <p className="text-gray-400 text-sm mb-4">
                   Developed a dynamic theatre reservation system using ReactJS,
                   featuring interactive seat selection, real-time availability
                   updates, secure payment integration, and user-friendly booking
