@@ -23,7 +23,7 @@ const ParticlesComponent = (props) => {
         color: {
           value: "#000000", // Default to black, but we add a gradient overlay
         },
-        image: "linear-gradient(to bottom, #000000, #05050f, #0f172a, #1e3a8a)",
+        // image: "linear-gradient(to bottom, #000000, #05050f, #0f172a, #1e3a8a)",
         position: "center",
         repeat: "no-repeat",
         size: "cover",

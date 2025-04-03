@@ -23,6 +23,7 @@ export const About = () => {
     "CSS3",
     "Tailwind",
     "RestAPIs",
+    "FastAPI",
     "GraphQL",
   ];
   const cloudTechnologiesSkills = [
@@ -48,31 +49,31 @@ export const About = () => {
     "ChromaDB",
   ];
 
-  const otherSkills = ["Agile", "Jira", "Asana", "Git"];
-  const frontendSkills = [
-    "React",
-    "Vue",
-    "TypeScript",
-    "TailwindCSS",
-    "Svelte",
+  const genAISkills = [
+    "CursorAI",
+    "LangChain",
+    "Copilot",
+    "OpenAI API",
+    "HuggingFace",
+    "StreamLit",
   ];
 
-  const backendSkills = ["Node.js", "Python", "AWS", "MongoDB", "GraphQL"];
+  const otherSkills = ["Agile", "Jira", "Asana", "Git"];
 
   return (
     <section
-      id="about"
-      className="min-h-screen flex items-center justify-center py-20"
+      id="skills"
+      className="min-h-screen flex items-center justify-center py-20 "
     >
       <RevealOnScroll>
         <div className="max-w-3xl mx-auto px-4">
           {/* Header  */}
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
             {" "}
-            About Me
+            Skills
           </h2>
           {/* List of Skils  */}
-          <div className="rounded-xl p-8 mb-6 border-white/10 border hover:-translate-y-1 transition-all">
+          <div className="rounded-xl  p-8 mb-6 border-white/10 border hover:-translate-y-1 transition-all">
             <p className="text-gray-300 mb-6">
               Passionate{" "}
               <span className="text-blue-500">MERN Stack Specialist</span> with
@@ -149,6 +150,22 @@ export const About = () => {
               </div>
 
               <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+                <h3 className="text-xl font-bold mb-4"> GenAI</h3>
+                <div className="flex flex-wrap gap-2">
+                  {genAISkills.map((tech, key) => (
+                    <span
+                      key={key}
+                      className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20
+                                    hover:shadow-[0_4px_12px_rgba(59,130,246,0.8)]! transition
+                    "
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
                 <h3 className="text-xl font-bold mb-4"> Others</h3>
                 <div className="flex flex-wrap gap-2">
                   {otherSkills.map((tech, key) => (
@@ -166,7 +183,7 @@ export const About = () => {
             </div>
           </div>
           {/* List of Education  */}
-          <div className="p-6 mb-6 rounded-xl border-white/10 border hover:translate-y-1! hover:shadow-[0_4px_12px_rgba(255,255,255,0.2),inset_0_2px_6px_rgba(255,255,255,0.1)]! transition-all">
+          {/* <div className="p-6 mb-6 rounded-xl border-white/10 border hover:translate-y-1! hover:shadow-[0_4px_12px_rgba(255,255,255,0.2),inset_0_2px_6px_rgba(255,255,255,0.1)]! transition-all">
             <h3 className="text-4xl font-bold mb-4"> 🏫 Education </h3>
             <ul className="list-disc list-inside text-gray-300 space-y-2">
               <li>
@@ -178,13 +195,13 @@ export const About = () => {
                 Somaiya College of Engineering (2019-2023)
               </li>
             </ul>
-          </div>
+          </div> */}
           {/* List of Work Experience  */}
-          <div className="p-6 rounded-xl border-white/10 border hover:translate-y-1! hover:shadow-[0_4px_12px_rgba(255,255,255,0.2),inset_0_2px_6px_rgba(255,255,255,0.1)]!  transition-all">
+          {/* <div className="p-6 rounded-xl border-white/10 border hover:translate-y-1! hover:shadow-[0_4px_12px_rgba(255,255,255,0.2),inset_0_2px_6px_rgba(255,255,255,0.1)]!  transition-all">
             <h3 className="text-4xl font-bold mb-4"> 💼 Work Experience </h3>
-            <div className="space-y-4 text-gray-300">
-              {/* IC3  */}
-              <div>
+            <div className="space-y-4 text-gray-300"> */}
+          {/* IC3  */}
+          {/* <div>
                 <h4 className="font-bold text-white">
                   {" "}
                   Graduate Research Assistant | Intelligent Clinical Care Center
@@ -264,9 +281,9 @@ export const About = () => {
                     </span>
                   </li>
                 </ul>
-              </div>
-              {/* Levyne  */}
-              <div>
+              </div> */}
+          {/* Levyne  */}
+          {/* <div>
                 <h4 className="font-bold text-white">
                   {" "}
                   Software Engineer | Levyne (03/2021 – 08/2023){" "}
@@ -354,7 +371,7 @@ export const About = () => {
                 </ul>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </RevealOnScroll>
     </section>

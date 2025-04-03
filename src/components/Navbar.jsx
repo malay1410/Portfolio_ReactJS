@@ -10,7 +10,13 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "about", "projects", "contact"];
+      const sections = [
+        "home",
+        "skills",
+        "prismap-projects",
+        "future-plans",
+        "personal-projects",
+      ];
       const scrollPosition = window.scrollY + 100; // Offset for accuracy
 
       for (const section of sections) {
@@ -59,7 +65,13 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {["home", "about", "projects", "contact"].map((section) => (
+            {[
+              "home",
+              "skills",
+              "prismap-projects",
+              "future-plans",
+              "personal-projects",
+            ].map((section) => (
               <ScrollLink
                 key={section}
                 to={section}
@@ -69,7 +81,9 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
                   activeSection === section ? "text-blue-500" : "text-gray-300"
                 } hover:text-blue-500 relative group transition-colors duration-300 cursor-pointer`}
               >
-                {section.charAt(0).toUpperCase() + section.slice(1)}
+                {section
+                  .split("-")
+                  .map((s) => s.charAt(0).toUpperCase() + s.slice(1) + " ")}
                 <span
                   className={`absolute bottom-0 left-0 w-full h-0.5 ${
                     activeSection === section
@@ -81,7 +95,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
             ))}
 
             {/* Resume Button with Pulsing Glow Effect */}
-            <a
+            {/* <a
               href="https://drive.google.com/file/d/1fddrncXUHLipiBvgGPtOBQcgMZSRM8Do/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
@@ -89,7 +103,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
              hover:bg-blue-600 animate-pulse shadow-lg shadow-blue-500/50 hover:shadow-blue-500/80"
             >
               Resume
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
