@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -b version_2.0"
+    "deploy": "gh-pages -d dist -b version_4.0"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.0.17",
