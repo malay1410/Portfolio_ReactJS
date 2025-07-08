@@ -8,6 +8,7 @@ import gatorLibrary from "../../assets/projectImages/gator_library.png";
 import chatAppUsingFlutter from "../../assets/projectImages/chat_app_using_flutter.png";
 import blockchainBasedStudentVerificationTechnology from "../../assets/projectImages/blockchainBasedStudentVerificationTechnology.png";
 import decentralizedCarRentalApp from "../../assets/projectImages/decentralized_car_rental_app.png";
+import SendSwift from "../../assets/projectImages/SendSwift.png";
 
 export const PersonalProjects = () => {
   return (
@@ -22,6 +23,51 @@ export const PersonalProjects = () => {
             Personal Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* SendSwift */}
+            <a
+              href="https://github.com/malay1410/send-swift"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block backdrop-blur-xs!"
+            >
+              <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-4! hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.6)]! transition">
+                <img
+                  src={SendSwift}
+                  alt="Quick Quiz Preview"
+                  className="w-full h-60 object-cover rounded-lg mb-4"
+                />
+
+                <h3 className="text-xl font-bold mb-2">Quick Quiz</h3>
+                <p className="text-gray-400 text-sm mb-4">
+                  SendSwift is a secure, password-free messaging platform that
+                  enables users to send emails and data instantly. Built with
+                  React and Node.js, it offers a fast, user-friendly experience.
+                  With modern encryption and token-based access, SendSwift
+                  ensures safe, seamless communication—ideal for teams,
+                  freelancers, and automated notification workflows.
+                </p>
+
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {["React", "Node.js"].map((tech, key) => (
+                    <span
+                      key={key}
+                      className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="flex justify-between items-center">
+                  <a
+                    href="https://github.com/malay1410/quickquizz-frontend"
+                    className="text-blue-400 hover:text-blue-300 transition-colors my-4"
+                  >
+                    View Project →
+                  </a>
+                </div>
+              </div>
+            </a>
             {/* Quick Quiz App  */}
             <a
               href="https://github.com/malay1410/quickquizz-frontend"

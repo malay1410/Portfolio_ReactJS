@@ -8,8 +8,8 @@ import { Navbar } from "./components/Navbar";
 import { MobileMenu } from "./components/MobileMenu";
 import { Home } from "./components/sections/Home";
 import { About } from "./components/sections/About";
-import { PrismapProjects } from "./components/sections/PrismapProjects";
-import { FuturePlans } from "./components/sections/FuturePlans";
+import { Experience } from "./components/sections/Experience";
+// import { FuturePlans } from "./components/sections/FuturePlans";
 import { PersonalProjects } from "./components/sections/PersonalProjects";
 import { Contact } from "./components/sections/Contact";
 import { Footer } from "./components/Footer";
@@ -33,9 +33,9 @@ function App() {
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Home />
         <About />
-        <PrismapProjects />
+        <Experience />
         <PersonalProjects />
-        <FuturePlans />
+        {/* <FuturePlans /> */}
         <Contact />
         <Footer />
       </div>

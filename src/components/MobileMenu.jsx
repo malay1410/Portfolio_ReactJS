@@ -22,13 +22,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
       </button>
 
       {/* Menu Links */}
-      {[
-        "home",
-        "skills",
-        "prismap-projects",
-        "future-plans",
-        "personal-projects",
-      ].map((section) => (
+      {["home", "skills", "experience", "personal-projects"].map((section) => (
         <a
           key={section}
           href={`#${section}`}
