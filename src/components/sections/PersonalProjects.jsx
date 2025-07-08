@@ -33,11 +33,11 @@ export const PersonalProjects = () => {
               <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-4! hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.6)]! transition">
                 <img
                   src={SendSwift}
-                  alt="Quick Quiz Preview"
+                  alt="SendSwift Preview"
                   className="w-full h-60 object-cover rounded-lg mb-4"
                 />
 
-                <h3 className="text-xl font-bold mb-2">Quick Quiz</h3>
+                <h3 className="text-xl font-bold mb-2">Send Swift</h3>
                 <p className="text-gray-400 text-sm mb-4">
                   SendSwift is a secure, password-free messaging platform that
                   enables users to send emails and data instantly. Built with
