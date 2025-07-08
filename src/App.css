@@ -4,3 +4,43 @@
   width: 100%;
   position: absolute;
 }
+
+@keyframes border-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-border-spin {
+  background: conic-gradient(
+    from 0deg,
+    #3b82f6,
+    #06b6d4,
+    #10b981,
+    #f59e42,
+    #3b82f6
+  );
+  filter: blur(2px);
+  animation: border-spin 2s linear infinite;
+  z-index: 0;
+}
+
+.group > .animate-border-spin {
+  /* Ensures the border is behind the card */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 0.75rem; /* match your card's rounded-xl */
+  padding: 2px; /* thickness of the border */
+}
+
+.group > a > div {
+  position: relative;
+  z-index: 10;
+  background: #18181b; /* or your card's background */
+}

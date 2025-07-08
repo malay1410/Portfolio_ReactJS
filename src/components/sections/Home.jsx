@@ -12,7 +12,7 @@ export const Home = () => {
           <h1 className="text-5xl md:text-7xl md: mt-[5rem] font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-right">
             Hi, I'm Malay Bhatt
           </h1>
-          {/* <p className="text-gray-300 text-lg mb-8 max-w-lg mx-auto">
+          <p className="text-gray-300 text-lg mb-8 max-w-lg mx-auto">
             I'm a{" "}
             <span className="text-blue-500 font-semibold">
               Master's student in Computer Science
@@ -41,7 +41,7 @@ export const Home = () => {
             for credential verification. I am passionate about using technology
             to solve real-world problems and create impactful, innovative
             solutions.
-          </p> */}
+          </p>
 
           <p className="text-gray-300 text-lg mb-8 max-w-lg mx-auto">
             I am a{" "}
@@ -65,7 +65,7 @@ export const Home = () => {
 
           <div className="flex justify-center space-x-4">
             <ScrollLink
-              to="prismap-projects"
+              to="personal-projects"
               smooth={true}
               duration={800}
               className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden cursor-pointer hover:-translate-y-0.5 hover:shadow-lg hover:shadow-blue-500/50"
@@ -73,14 +73,14 @@ export const Home = () => {
               View Projects
             </ScrollLink>
 
-            {/* <ScrollLink
+            <ScrollLink
               to="contact"
               smooth={true}
               duration={800}
               className="border border-blue-500/50 text-white py-3 px-6 rounded font-medium transition-all duration-200 cursor-pointer hover:-translate-y-0.5 hover:shadow-lg hover:shadow-blue-500/50 hover:bg-blue-500/10"
             >
               Contact Me
-            </ScrollLink> */}
+            </ScrollLink>
           </div>
         </div>
       </RevealOnScroll>
