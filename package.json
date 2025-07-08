@@ -1,8 +1,8 @@
 {
   "name": "portfolio",
-  "homepage": "https://malay1410.github.io/MyPrismapJourney/",
+  "homepage": "https://malay1410.github.io/malay_bhatt_portfolio/",
   "private": true,
-  "version": "2.0.0",
+  "version": "4.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
