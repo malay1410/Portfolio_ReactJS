@@ -10,7 +10,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "skills", "personal-projects", "experience"];
+      const sections = ["home", "skills", "experience", "personal-projects"];
       const scrollPosition = window.scrollY + 100; // Offset for accuracy
 
       for (const section of sections) {
@@ -64,7 +64,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {["home", "skills", "personal-projects", "experience"].map(
+            {["home", "skills", "experience", "personal-projects"].map(
               (section) => (
                 <ScrollLink
                   key={section}
